@@ -1,0 +1,24 @@
+/* GENERALS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
+.shadow {
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+/* HOME */
