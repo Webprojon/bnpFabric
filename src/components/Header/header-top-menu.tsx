@@ -1,18 +1,21 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import ResponsiveMenu from "./header-top-menu";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { MdClose } from "react-icons/md";
 import { useGlobalContext } from "../../context/global-context";
 
-export default function Header() {
-	const [title, setTitle] = useState("Home - LLC Bukhara Natural Product");
+export default function ResponsiveMenu() {
 	const { isMenuOpen, setIsMenuOpen } = useGlobalContext();
+	const [title, setTitle] = useState("Home - LLC Bukhara Natural Product");
 	const location = useLocation();
 	const pathname = location.pathname;
 
 	useEffect(() => {
 		document.title = title;
 	}, [title]);
+
+	const handleMenuToggle = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
 
 	const handleClick = (language: string) => {
 		console.log(language);
@@ -56,25 +59,19 @@ export default function Header() {
 	];
 
 	return (
-		<header className="sticky top-0 bg-white z-[1000]">
-			{isMenuOpen && <ResponsiveMenu />}
-			<nav className="mx-auto max-w-[1460px] h-[12vh] flex justify-between space-x-10 items-center tracking-wide px-2 md:px-0">
-				<img
-					alt="logo"
-					className="w-[150px] xs:w-[200px] sm:w-[190px]"
-					src="https://www.bnpfabric.uz/wp-content/uploads/2019/10/logo.2230098a.png"
-				/>
-				<RxHamburgerMenu
-					className="size-7 md:hidden"
-					onClick={() => setIsMenuOpen(!isMenuOpen)}
-				/>
-				<div className="hidden md:flex justify-between w-full items-center gap-x-8">
-					<div className="space-x-10">
+		<header className="md:hidden">
+			<div
+				className={`fixed top-0 left-0 w-full transition-transform duration-300 z-[1000]
+				${isMenuOpen ? "translate-y-0" : "-translate-y-full"}`}
+			>
+				<div className="flex flex-col gap-y-10 pt-16 items-center h-screen transition-transform duration-500 bg-white">
+					<MdClose onClick={handleMenuToggle} className="size-8" />
+					<div className="flex flex-col items-center space-y-6">
 						{links.map((link, i) => (
 							<Link
 								key={i}
 								to={link.linkUrl}
-								className={`font-semibold text-[17px]
+								className={`font-semibold text-[20px] md:text-[17px]
 									${pathname === link.linkUrl ? "text-black/90" : "text-black/55"}`}
 								onClick={() => {
 									setTitle(`${link.linkName} - LLC Bukhara Natural Product`);
@@ -97,7 +94,7 @@ export default function Header() {
 						))}
 					</div>
 				</div>
-			</nav>
+			</div>
 		</header>
 	);
 }
