@@ -64,7 +64,7 @@ export default function ResponsiveMenu() {
 				className={`fixed top-0 left-0 w-full transition-transform duration-300 z-[1000]
 				${isMenuOpen ? "translate-y-0" : "-translate-y-full"}`}
 			>
-				<div className="flex flex-col gap-y-10 pt-16 items-center h-screen transition-transform duration-500 bg-white">
+				<div className="flex flex-col gap-y-20 pt-16 items-center h-screen transition-transform duration-500 bg-white">
 					<MdClose onClick={handleMenuToggle} className="size-8" />
 					<div className="flex flex-col items-center space-y-6">
 						{links.map((link, i) => (
@@ -75,6 +75,7 @@ export default function ResponsiveMenu() {
 									${pathname === link.linkUrl ? "text-black/90" : "text-black/55"}`}
 								onClick={() => {
 									setTitle(`${link.linkName} - LLC Bukhara Natural Product`);
+									handleMenuToggle();
 								}}
 							>
 								{link.linkName}

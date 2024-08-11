@@ -65,7 +65,7 @@ export default function Header() {
 					src="https://www.bnpfabric.uz/wp-content/uploads/2019/10/logo.2230098a.png"
 				/>
 				<RxHamburgerMenu
-					className="size-7 md:hidden"
+					className="size-8 md:hidden"
 					onClick={() => setIsMenuOpen(!isMenuOpen)}
 				/>
 				<div className="hidden md:flex justify-between w-full items-center gap-x-8">
