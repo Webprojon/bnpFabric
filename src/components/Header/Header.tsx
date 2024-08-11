@@ -74,7 +74,7 @@ export default function Header() {
 							<Link
 								key={i}
 								to={link.linkUrl}
-								className={`font-semibold text-[17px]
+								className={`font-semibold text-[19px]
 									${pathname === link.linkUrl ? "text-black/90" : "text-black/55"}`}
 								onClick={() => {
 									setTitle(`${link.linkName} - LLC Bukhara Natural Product`);
@@ -85,7 +85,7 @@ export default function Header() {
 						))}
 					</div>
 
-					<div className="flex space-x-6 cursor-pointer">
+					<div className="flex space-x-8 cursor-pointer">
 						{flags.map((flag, index) => (
 							<img
 								key={index}
