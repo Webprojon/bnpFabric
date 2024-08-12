@@ -1,3 +1,5 @@
+import HomeCollections from "./Collection";
+
 export default function Home() {
 	const infos = [
 		{
@@ -66,6 +68,8 @@ export default function Home() {
 					</div>
 				))}
 			</div>
+
+			<HomeCollections />
 		</section>
 	);
 }

@@ -1,11 +1,12 @@
 import Header from "./components/Header/Header";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Colletion from "./pages/Collection/Colletion";
-import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
+import Home from "./pages/HomePage/Home";
+import Colletion from "./pages/CollectionPage/Colletion";
+import About from "./pages/AboutPage/About";
+import Contact from "./pages/ContactPage/Contact";
 import Network from "./components/Network";
 import { GlobalContextProvider } from "./context/global-context";
+import ProductDetails from "./pages/HomePage/Collection-Product";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/collection" element={<Colletion />} />
+					<Route path="/product/:text" element={<ProductDetails />} />
 					<Route path="/contact" element={<Contact />} />
 				</Routes>
 				<Network />

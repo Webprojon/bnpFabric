@@ -30,3 +30,15 @@ html::-webkit-scrollbar {
 }
 
 /* HOME */
+
+/* COLLECTION */
+/*.bg-color {
+	background: rgb(50, 81, 94);
+	background: linear-gradient(
+		180deg,
+		rgba(50, 81, 94, 1) 0%,
+		rgba(58, 101, 130, 1) 49%,
+		rgba(45, 73, 99, 1) 100%,
+		rgba(92, 77, 130, 1) 100%
+	);
+}*/
