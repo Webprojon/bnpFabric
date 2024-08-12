@@ -58,7 +58,7 @@ export default function Header() {
 	return (
 		<header className="sticky top-0 bg-white z-[1000]">
 			{isMenuOpen && <ResponsiveMenu />}
-			<nav className="mx-auto max-w-[1460px] h-[12vh] flex justify-between space-x-10 items-center tracking-wide px-2 md:px-0">
+			<nav className="mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px] h-[12vh] flex justify-between space-x-10 items-center tracking-wide px-2 md:px-0">
 				<img
 					alt="logo"
 					className="w-[150px] xs:w-[200px] sm:w-[190px]"
