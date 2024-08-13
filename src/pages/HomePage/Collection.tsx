@@ -65,13 +65,14 @@ export default function HomeCollections() {
 						<div className="mt-8 md:mt-14 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-5 md:gap-x-10 gap-y-8 md:gap-y-14">
 							{card.cards.map((item, index) => (
 								<Link
-									to={`/product/${formatTextForUrl(item.text)}`}
 									key={index}
+									className="group"
+									to={`/product/${formatTextForUrl(item.text)}`}
 								>
 									<img
 										alt="imgs"
-										className="rounded-[15px] w-[260px] group hover:-translate-y-1 transition-all cursor-pointer"
 										src={item.src}
+										className="rounded-[15px] w-[260px] hover:-translate-y-1 transition-all cursor-pointer"
 									/>
 									<p className="xs:text-[19px] mt-3 text-black/90 font-medium transition-all group-hover:text-red-600 group-hover:font-bold">
 										{item.text}

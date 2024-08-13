@@ -1,4 +1,5 @@
 import HomeCollections from "./Collection";
+import NewsSection from "./News";
 
 export default function Home() {
 	const infos = [
@@ -70,6 +71,7 @@ export default function Home() {
 			</div>
 
 			<HomeCollections />
+			<NewsSection />
 		</section>
 	);
 }

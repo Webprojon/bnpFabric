@@ -29,6 +29,10 @@ html::-webkit-scrollbar {
 	}
 }
 
+.resize {
+	resize: none;
+}
+
 /* HOME */
 
 /* COLLECTION */
