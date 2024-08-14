@@ -1,5 +1,6 @@
 import HomeCollections from "./Collection";
 import NewsSection from "./News";
+import bgHomeImg from "../../assets/images/bg-home.png";
 
 export default function Home() {
 	const infos = [
@@ -35,16 +36,19 @@ export default function Home() {
 				<div className="flex">
 					<img
 						alt="home img"
-						className="w-[400px] xs:w-[600px] sm:w-[800px] md:w-[1000px] lg:w-[80%]"
-						src="https://www.bnpfabric.uz/wp-content/uploads/2024/02/111-copy.png"
+						className="w-[250px] xs:w-[400px] sm:w-[500px] md:w-[700px] lg:w-[900px]"
+						src={bgHomeImg}
 					/>
-					<div className="absolute right-4 bottom-4 md:right-8  sm:top-4 text-white">
-						<h1 className="flex flex-col leading-10 sm:leading-[4rem] md:leading-[6.4rem] text-right font-bold text-[20px] sm:text-[30px] md:text-[60px]">
+					<div className="absolute right-4 bottom-4 md:right-8  xs:top-4 text-white">
+						<h1
+							className="flex flex-col leading-10 sm:leading-[4rem] md:leading-[6.4rem] lg:leading-[7.5rem] text-right font-bold text-[20px] 
+						sm:text-[30px] md:text-[60px] lg:text-[75px]"
+						>
 							<span>Bukhara</span>
-							<span className="text-[36px] sm:text-[44px] md:text-[90px]">
+							<span className="text-[36px] sm:text-[44px] md:text-[90px] lg:text-[110px]">
 								Natural
 							</span>
-							<span className="text-[50px] sm:text-[60px] md:text-[130px]">
+							<span className="text-[50px] sm:text-[60px] md:text-[130px] lg:text-[140px]">
 								Products
 							</span>
 						</h1>

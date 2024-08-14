@@ -30,28 +30,34 @@ export default function NewsSection() {
 	];
 
 	return (
-		<section className="mt-[6rem] mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
+		<section className="mt-14 md:mt-[6rem] px-2 lg:px-0 mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
 			<div className="flex flex-col items-center">
-				<h1 className="leading-none font-bold text-[42px]">News</h1>
-				<p className="text-black/60 mt-3 text-[18px]">
+				<h1 className="leading-none font-bold text-[28px] xs:text-[40px]">
+					News
+				</h1>
+				<p className="text-black/60 mt-3 xs:text-[18px]">
 					Bukhara Natural Product
 				</p>
 
-				<div className="grid grid-cols-3 gap-x-10 my-10">
+				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-12 my-5 md:my-10">
 					{newsItems.map((item, index) => (
 						<div key={index}>
 							<img
 								alt="news imgs"
 								src={item.imgSrc}
-								className="rounded-[20px] shadow-2xl"
+								className="rounded-[10px] md:rounded-[20px] shadow-2xl"
 							/>
-							<div className="pr-[7rem]">
+							<div className="lg:pr-[7rem]">
 								<div className="space-x-5 mt-6 text-[17px]">
 									<span>{item.date}</span>
 									<span>by {item.author}</span>
 								</div>
-								<h2 className="my-4 font-bold text-[22px]">{item.title}</h2>
-								<p className="text-black/85 text-[17px] leading-6">{item.description}</p>
+								<h2 className="my-4 font-bold text-[19px] xs:text-[22px]">
+									{item.title}
+								</h2>
+								<p className="text-black/85 xs:text-[17px] leading-6">
+									{item.description}
+								</p>
 							</div>
 						</div>
 					))}

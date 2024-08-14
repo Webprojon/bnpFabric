@@ -5,6 +5,12 @@ export default function HomeCollections() {
 	const formatTextForUrl = (text: string) =>
 		text.toLowerCase().replace(/\s+/g, "-");
 
+	const scrollTop = () => {
+		window.scrollTo({
+			top: 0,
+		});
+	};
+
 	return (
 		<section>
 			{cardDetails.map((card) => (
@@ -67,6 +73,7 @@ export default function HomeCollections() {
 								<Link
 									key={index}
 									className="group"
+									onClick={scrollTop}
 									to={`/product/${formatTextForUrl(item.text)}`}
 								>
 									<img

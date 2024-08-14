@@ -7,6 +7,7 @@ import Contact from "./pages/ContactPage/Contact";
 import Network from "./components/Network";
 import { GlobalContextProvider } from "./context/global-context";
 import ProductDetails from "./pages/HomePage/Collection-Product";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 					<Route path="/product/:text" element={<ProductDetails />} />
 					<Route path="/contact" element={<Contact />} />
 				</Routes>
+				<Footer />
 				<Network />
 			</GlobalContextProvider>
 		</section>

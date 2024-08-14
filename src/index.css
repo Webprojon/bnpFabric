@@ -46,3 +46,15 @@ html::-webkit-scrollbar {
 		rgba(92, 77, 130, 1) 100%
 	);
 }*/
+
+.input-bg {
+	background: rgb(246, 247, 247);
+	background: linear-gradient(
+		90deg,
+		rgba(246, 247, 247, 1) 0%,
+		rgba(221, 202, 221, 1) 100%
+	);
+
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
