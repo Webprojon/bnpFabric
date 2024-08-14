@@ -19,8 +19,8 @@ export default function Footer() {
 					</p>
 				</div>
 
-				<div className="flex flex-col space-y-2 text-black/75">
-					<p className="font-bold text-[22px] md:text-[20px] mb-1 md:mb-4">
+				<div className="flex flex-col space-y-3 lg:space-y-2 text-black/75">
+					<p className="font-bold text-[24px] md:text-[20px] mb-1 md:mb-4">
 						Menu
 					</p>
 					<Link to="/">Home</Link>
@@ -29,8 +29,8 @@ export default function Footer() {
 					<Link to="/contact">Contacts</Link>
 				</div>
 
-				<div className="flex flex-col space-y-1 text-black/75">
-					<p className="font-bold text-[22px] md:text-[20px] mb-1 md:mb-4">
+				<div className="flex flex-col space-y-3 lg:space-y-1 text-black/75">
+					<p className="font-bold text-[24px] md:text-[20px] mb-1 md:mb-4">
 						Contacts
 					</p>
 					<span>Bukhara, st. Alpomysh 80.</span>
