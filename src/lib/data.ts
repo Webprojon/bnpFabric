@@ -2,18 +2,42 @@ import firstCollectionImg from "../assets/images/111.png";
 import secondCollectionImg from "../assets/images/111-1.png";
 import thirdCollectionImg from "../assets/images/111-2.png";
 
-//interface Card {
-//	id: number;
-//	src: string;
-//	text: string;
-//}
+export const links = [
+	{
+		linkName: "Home",
+		linkUrl: "/",
+	},
+	{
+		linkName: "Collection",
+		linkUrl: "/collection",
+	},
+	{
+		linkName: "About Us",
+		linkUrl: "/about",
+	},
+	{
+		linkName: "Contacts",
+		linkUrl: "/contact",
+	},
+];
 
-//interface Collection {
-//	id: number;
-//	img: string;
-//	heading: string;
-//	cards: Card[];
-//}
+export const flags = [
+	{
+		src: "https://vectorflags.s3.amazonaws.com/flags/uz-circle-01.png",
+		alt: "Uzbekistan flag",
+		language: "uz",
+	},
+	{
+		src: "https://vectorflags.s3.amazonaws.com/flags/ru-circle-01.png",
+		alt: "Russian flag",
+		language: "ru",
+	},
+	{
+		src: "https://static.vecteezy.com/system/resources/thumbnails/007/910/760/small_2x/united-kingdom-flag-rounded-icon-uk-flag-union-jack-vector.jpg",
+		alt: "English flag",
+		language: "en",
+	},
+];
 
 export const products = [
 	{
