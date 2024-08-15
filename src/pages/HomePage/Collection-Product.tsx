@@ -136,7 +136,7 @@ export default function ProductDetails() {
 						</div>
 
 						<form className="flex flex-col space-y-7">
-							<div className="flex flex-col md:flex-row justify-between">
+							<div className="flex flex-col sm:flex-row justify-between">
 								<div className="flex flex-col">
 									<label
 										htmlFor="name"
@@ -149,7 +149,7 @@ export default function ProductDetails() {
 										required
 										id="name"
 										autoComplete="off"
-										className="bg-gray-200 rounded-[22px] md:rounded-[27px] md:w-[470px] py-3 md:py-4 px-6 outline-none"
+										className="bg-gray-200 rounded-[22px] md:rounded-[27px] sm:w-[310px] md:w-[470px] py-4 px-6 outline-none"
 									/>
 								</div>
 								<div className="flex flex-col mt-4 sm:mt-0">
@@ -164,7 +164,7 @@ export default function ProductDetails() {
 										required
 										id="email"
 										autoComplete="off"
-										className="bg-gray-200 rounded-[22px] md:rounded-[27px] md:w-[470px] py-3 md:py-4 px-6 outline-none"
+										className="bg-gray-200 rounded-[22px] md:rounded-[27px] sm:w-[310px] md:w-[470px] py-4 px-6 outline-none"
 									/>
 								</div>
 							</div>
@@ -184,7 +184,7 @@ export default function ProductDetails() {
 								></textarea>
 							</div>
 
-							<button className="py-2 md:py-3 self-end px-12 md:px-16 rounded-[25px] text-[17px] bg-red-600 hover:bg-red-500 transition-all text-white font-medium">
+							<button className="py-3 self-end px-12 md:px-16 rounded-[25px] text-[17px] bg-red-600 hover:bg-red-500 transition-all text-white font-medium">
 								Send
 							</button>
 						</form>
