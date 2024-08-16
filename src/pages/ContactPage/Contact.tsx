@@ -21,7 +21,7 @@ export default function Contact() {
 	];
 
 	return (
-		<section className="mt-20 mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
+		<section className="mt-16 mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
 			<div className="flex justify-between items-end">
 				<div className="w-[560px]">
 					<h2 className="font-bold text-[34px] mb-8">Contact</h2>
