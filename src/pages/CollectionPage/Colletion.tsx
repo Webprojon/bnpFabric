@@ -1,8 +1,4 @@
-import {
-	IoChevronDownSharp,
-	IoChevronForward,
-	IoSearch,
-} from "react-icons/io5";
+import { IoChevronForward, IoSearch } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { cardDetails } from "../../lib/data";
 import { useState } from "react";
