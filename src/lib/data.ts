@@ -9,7 +9,7 @@ export const links = [
 	},
 	{
 		linkName: "Collection",
-		linkUrl: "/collection",
+		linkUrl: "/shop",
 	},
 	{
 		linkName: "About Us",

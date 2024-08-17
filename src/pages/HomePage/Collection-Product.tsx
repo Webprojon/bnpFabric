@@ -42,7 +42,7 @@ export default function ProductDetails() {
 
 	return (
 		<section className="mx-auto px-2 lg:px-0 max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
-			<div className="my-6 md:my-14 flex flex-col md:flex-row justify-between items-center">
+			<div className="xs:mt-5 flex flex-col md:flex-row justify-between items-center">
 				<InnerImageZoom
 					src={product.src}
 					zoomSrc={product.src}
