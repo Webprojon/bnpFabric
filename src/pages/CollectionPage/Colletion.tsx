@@ -15,9 +15,9 @@ export default function Colletion() {
 	};
 
 	return (
-		<section className="mt-16 mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
-			<div className="flex space-x-20">
-				<div className="w-[390px]">
+		<section className="xs:mt-5 md:mt-16 px-2 lg:px-0 mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
+			<div className="flex flex-col-reverse md:flex-row md:space-x-20">
+				<div className="sm:w-[500px] lg:w-[390px] mt-10 md:mt-0">
 					<form className="relative">
 						<input
 							type="text"
@@ -42,7 +42,7 @@ export default function Colletion() {
 						</div>
 
 						{!toggle && (
-							<div className="flex flex-col gap-y-2 text-black/70 text-[17px] mt-6">
+							<div className="mx-auto md:mx-0 flex flex-col gap-y-6 md:gap-y-2 text-black/70 text-[17px] mt-6">
 								<Link to="/" className="hover:text-red-600 hover:font-medium">
 									Spring Collection
 								</Link>
@@ -64,14 +64,14 @@ export default function Colletion() {
 				</div>
 
 				<div className="w-full">
-					<div className="flex items-center justify-between">
+					<div className="flex flex-col md:flex-row items-start md:items-center justify-between">
 						<div>
-							<h2 className="font-bold text-[38px] mb-3 leading-none">
+							<h2 className="font-bold text-[26px] md:text-[38px] mb-3 leading-none">
 								Summer collection
 							</h2>
 							<span className="text-black/80">Showing 1-16 of 25</span>
 						</div>
-						<select className="rounded-[27px] cursor-pointer outline-none appearance-none bg-black text-white py-[14px] pl-7 px-1">
+						<select className="mt-5 rounded-[24px] md:rounded-[27px] cursor-pointer outline-none appearance-none bg-black text-white py-3 md:py-[14px] pl-7 px-1">
 							<option value="initial-sort">Initial sort</option>
 							<option value="by-popularity">By popularity</option>
 							<option value="by-rating">By rating</option>
@@ -81,7 +81,7 @@ export default function Colletion() {
 						</select>
 					</div>
 
-					<div className="mt-10 grid lg:grid-cols-4 gap-x-8 gap-y-12">
+					<div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-8 sm:gap-x-8 md:gap-y-12">
 						{cardDetails[0].cards.map((item, index) => (
 							<Link
 								key={index}
@@ -92,7 +92,7 @@ export default function Colletion() {
 								<img
 									alt="imgs"
 									src={item.src}
-									className="rounded-[22px] w-[260px] h-[35vh] cursor-pointer"
+									className="rounded-[22px] md:w-[260px] md:h-[35vh] cursor-pointer"
 								/>
 								<p className="xs:text-[19px] mt-3 text-black/90 font-medium transition-all group-hover:text-red-600 group-hover:font-bold">
 									{item.text}

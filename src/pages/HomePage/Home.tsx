@@ -31,8 +31,8 @@ export default function Home() {
 	];
 
 	return (
-		<section className="mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
-			<div className="relative rounded-[20px] bg-black/75 mx-2 xs:mx-0 h-[35vh] xs:h-[40vh] sm:h-[60vh] border-2 md:h-[87vh]">
+		<section className="xs:mt-5 px-2 lg:px-0 mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
+			<div className="relative rounded-[20px] bg-black/75 h-[35vh] xs:h-[40vh] sm:h-[60vh] md:h-[87vh]">
 				<div className="flex">
 					<img
 						alt="home img"
