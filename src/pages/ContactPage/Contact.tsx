@@ -21,11 +21,11 @@ export default function Contact() {
 	];
 
 	return (
-		<section className="mt-16 mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
-			<div className="flex justify-between items-end">
-				<div className="w-[560px]">
+		<section className="mt-10 lg:mt-16 mx-auto px-2 lg:px-0 max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
+			<div className="flex flex-col md:flex-row justify-between items-end space-x-10">
+				<div className="w-full xs:w-[400px] sm:w-[500px] lg:w-[560px] mx-auto">
 					<h2 className="font-bold text-[34px] mb-8">Contact</h2>
-					<form className="w-full flex flex-col gap-y-6">
+					<form className="flex flex-col gap-y-6">
 						<input
 							required
 							type="email"
@@ -45,13 +45,13 @@ export default function Contact() {
 							placeholder="Your message here"
 							className="resize h-[32vh] rounded-[20px] bg-gray-200 py-4 px-8 text-black/70 placeholder:text-black/70 no-scroll text-[17px] outline-none"
 						></textarea>
-						<button className="self-end px-16 py-4 bg-red-600 text-white font-medium hover:bg-black transition-all rounded-[28px]">
+						<button className="lg:self-end px-16 py-4 bg-red-600 text-white font-medium hover:bg-black transition-all rounded-[28px]">
 							Submit
 						</button>
 					</form>
 				</div>
 
-				<div className="w-[800px] h-[80vh]">
+				<div className="mt-10 md:mt-0 mx-auto w-full xs:w-[400px] sm:w-[500px] md:w-[600px] lg:w-[800px] h-[40vh] sm:h-[50vh] md:h-[80vh]">
 					<iframe
 						loading="lazy"
 						className="w-full h-full"
@@ -60,11 +60,14 @@ export default function Contact() {
 				</div>
 			</div>
 
-			<div className="grid grid-cols-3 mx-auto pl-20 mt-[7rem]">
+			<div className="grid grid-cols-1 sm:grid-cols-3 mx-auto lg:pl-20 mt-20 md:mt-[7rem] gap-y-14">
 				{infos.map((item, i) => (
-					<div key={i} className="flex items-center space-x-6">
+					<div
+						key={i}
+						className="flex flex-col md:flex-row space-y-4 items-center space-x-6"
+					>
 						<img src={item.imgUrl} alt="delivery car" />
-						<div className="flex space-x-2 text-[17px]">
+						<div className="flex space-x-2 xs:text-[17px]">
 							<span className="font-bold">{item.desc}</span>
 							<span>{item.contact}</span>
 						</div>
