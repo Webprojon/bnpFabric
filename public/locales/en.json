@@ -401,5 +401,7 @@
 	"footer-p2": "Subscribe to our email",
 	"footer-input": "Enter Your Email",
 	"footer-btn": "Subscribe",
-	"footer-p3": "© 2024 LLC BUKHARA NATURAL PRODUCT. All rights reserved."
+	"footer-btn-subscribed": "You subscribed!",
+	"footer-p3": "© 2024 LLC BUKHARA NATURAL PRODUCT. All rights reserved.",
+	"modal-p": "Thank you for leaving your information, our specialists will contact you"
 }

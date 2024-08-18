@@ -9,6 +9,7 @@ import { GlobalContextProvider } from "./context/global-context";
 import ProductDetails from "./pages/HomePage/Collection-Product";
 import Footer from "./components/Footer/Footer";
 import { useTranslation } from "react-i18next";
+import { Toaster } from "react-hot-toast";
 
 function App() {
 	const { t } = useTranslation();
@@ -26,6 +27,7 @@ function App() {
 				</Routes>
 				<Footer />
 				<Network />
+				<Toaster position="top-right" />
 			</GlobalContextProvider>
 		</section>
 	);

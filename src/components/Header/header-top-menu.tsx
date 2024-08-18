@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 import { useGlobalContext } from "../../context/global-context";
-import { flags } from "../../lib/data";
 import { useTranslation } from "react-i18next";
+import HeaderLang from "./header-lang";
 
 export default function ResponsiveMenu() {
 	const { isMenuOpen, setIsMenuOpen } = useGlobalContext();
@@ -18,10 +18,6 @@ export default function ResponsiveMenu() {
 
 	const handleMenuToggle = () => {
 		setIsMenuOpen(!isMenuOpen);
-	};
-
-	const handleClick = (language: string) => {
-		console.log(language);
 	};
 
 	// Data
@@ -69,17 +65,7 @@ export default function ResponsiveMenu() {
 						))}
 					</div>
 
-					<div className="flex space-x-10 cursor-pointer">
-						{flags.map((flag, index) => (
-							<img
-								key={index}
-								src={flag.src}
-								alt={flag.alt}
-								onClick={() => handleClick(flag.language)}
-								className="w-10 hover:scale-105 transition-all shadow rounded-full"
-							/>
-						))}
-					</div>
+					<HeaderLang />
 				</div>
 			</div>
 		</header>

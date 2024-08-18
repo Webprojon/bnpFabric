@@ -1,8 +1,38 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import HeaderLang from "../Header/header-lang";
+import { useState } from "react";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 export default function Footer() {
 	const { t } = useTranslation();
+	const [userEmail, setUserEmail] = useState("");
+
+	const sendMessage = (event: React.FormEvent<HTMLFormElement>) => {
+		event.preventDefault();
+
+		const token = "6948864577:AAHTh7RO9xCZ6WFKQCle7YqvOnbfcXZIaP4";
+		const chat_id = "5850460435";
+		const url = `https://api.telegram.org/bot${token}/sendMessage`;
+		const messageContent = `New user to subscribe: ${userEmail}`;
+
+		axios({
+			url: url,
+			method: "POST",
+			data: {
+				chat_id: chat_id,
+				text: messageContent,
+			},
+		})
+			.then(() => {
+				setUserEmail("");
+				toast.success(t("footer-btn-subscribed"));
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+	};
 
 	const scrollTop = () => {
 		window.scrollTo({
@@ -18,6 +48,7 @@ export default function Footer() {
 			>
 				<div>
 					<img
+						onClick={scrollTop}
 						alt="footer img"
 						className="w-[280px] xs:w-[320px]"
 						src="https://www.bnpfabric.uz/wp-content/uploads/2019/10/logo.2230098a.png"
@@ -64,10 +95,15 @@ export default function Footer() {
 
 				<div>
 					<p className="font-bold text-[20px] mb-4">{t("footer-p2")}</p>
-					<form className="relative w-[100%] xs:w-[70%] sm:w-[60%] md:w-[500px]">
+					<form
+						onSubmit={sendMessage}
+						className="relative w-[100%] xs:w-[70%] sm:w-[60%] md:w-[500px] mb-10"
+					>
 						<input
-							type="text"
+							type="email"
 							required
+							value={userEmail}
+							onChange={(e) => setUserEmail(e.target.value)}
 							placeholder={t("footer-input")}
 							className="px-4 sm:px-8 py-3 sm:py-[1.1rem] rounded-[35px] outline-none w-[100%] md:w-[500px] input-bg text-black/40 placeholder:text-black/40"
 						/>
@@ -75,6 +111,8 @@ export default function Footer() {
 							{t("footer-btn")}
 						</button>
 					</form>
+
+					<HeaderLang />
 				</div>
 			</div>
 
