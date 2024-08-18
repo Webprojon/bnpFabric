@@ -1,32 +1,36 @@
 import HomeCollections from "./Collection";
 import NewsSection from "./News";
 import bgHomeImg from "../../assets/images/bg-home.png";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+	const { t } = useTranslation();
+
+	// Data
 	const infos = [
 		{
 			imgUrl:
 				"https://www.bnpfabric.uz/wp-content/uploads/2019/09/noun_delivery_1095359.svg",
-			title: "Free shipping",
-			description: "Free shipping on all orders",
+			title: t("homecard1.title"),
+			description: t("homecard1.description"),
 		},
 		{
 			imgUrl:
 				"https://www.bnpfabric.uz/wp-content/uploads/2019/09/noun_guarantee_952398.svg",
-			title: "Return Guarantee",
-			description: "30 day money back",
+			title: t("homecard2.title"),
+			description: t("homecard2.description"),
 		},
 		{
 			imgUrl:
 				"https://www.bnpfabric.uz/wp-content/uploads/2019/09/Group-995.svg",
-			title: "Online support 24/7",
-			description: "Technical support 24/7",
+			title: t("homecard3.title"),
+			description: t("homecard3.description"),
 		},
 		{
 			imgUrl:
 				"https://www.bnpfabric.uz/wp-content/uploads/2019/09/noun_Wallet_745515.svg",
-			title: "Secure payment",
-			description: "All payment methods accepted",
+			title: t("homecard4.title"),
+			description: t("homecard4.description"),
 		},
 	];
 
@@ -44,12 +48,12 @@ export default function Home() {
 							className="flex flex-col leading-10 sm:leading-[4rem] md:leading-[6.4rem] lg:leading-[7.5rem] text-right font-bold text-[20px] 
 						sm:text-[30px] md:text-[60px] lg:text-[75px]"
 						>
-							<span>Bukhara</span>
+							<span>{t("hometext1")}</span>
 							<span className="text-[36px] sm:text-[44px] md:text-[90px] lg:text-[110px]">
-								Natural
+								{t("hometext2")}
 							</span>
 							<span className="text-[50px] sm:text-[60px] md:text-[130px] lg:text-[140px]">
-								Products
+								{t("hometext3")}
 							</span>
 						</h1>
 					</div>

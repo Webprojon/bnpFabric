@@ -1,0 +1,405 @@
+{
+	"linkHome": "Bosh Sahifa",
+	"linkCollection": "To'plam",
+	"linkShopUrl": "/shop",
+	"linkAbout": "Biz Haqimizda",
+	"linkAboutUrl": "/biz-haqimizda",
+	"linkcontact": "Kontaktlar",
+	"linkContactUrl": "/kontaktlar",
+	"hometext1": "Buxoro",
+	"hometext2": "Tabiiy",
+	"hometext3": "Mahsulot",
+	"homecard1": {
+		"title": "Bepul yetkazib berish",
+		"description": "Bepul yetkazib berish"
+	},
+	"homecard2": {
+		"title": "Qaytarish kafolati",
+		"description": "30 kunlik pulni qaytarish kafolati"
+	},
+	"homecard3": {
+		"title": "24/7 onlayn a'loqa",
+		"description": "24/7 texnik yordam"
+	},
+	"homecard4": {
+		"title": "Xavfsiz to‘lov",
+		"description": "Barcha to‘lov usullari qabul qilinadi"
+	},
+	"notFoundProduct": "Bizda bunday tavar yo'q",
+	"collection-span": "Material sifati",
+	"collection-h2": "Buxoro Tabiiy Mahsulot",
+	"collection-p": "jahon bo'ylab foydalanish uchun ko'p yillar davomida paxta matolarini ishlab chiqaradigan kompaniya",
+	"collection-p-2": "Buxoro Tabiiy Mahsulot",
+	"collection-btn": "Kolleksiya",
+	"firstCollectionHeading": "Qishki kollektsiya",
+	"cardtext1": "Kvadratlar",
+	"cardtext2": "Ikat",
+	"cardtext3": "Doiralar",
+	"cardtext4": "Geometriya ko‘k",
+	"cardtext5": "Tropik barglar",
+	"cardtext6": "Bambi",
+	"cardtext7": "Vizantiya",
+	"cardtext8": "Kechki bog'",
+	"cardtext9": "Marquis pati",
+	"cardtext10": "Lavanda atirgullari",
+	"secondCollectionHeading": "Kuzgi kollektsiya",
+	"cardtext11": "Safari",
+	"cardtext12": "Rangli ametist",
+	"cardtext13": "Stucco bezak",
+	"cardtext14": "Zümrüd (AB)",
+	"cardtext15": "Malaxit qutisi",
+	"cardtext16": "Bahorning xushbo'y hidlari",
+	"cardtext17": "Kuzgi yaproqlar (AB)",
+	"cardtext18": "Moviy Breeze (AB)",
+	"cardtext19": "Suv moviy (AB)",
+	"cardtext20": "Plaid",
+	"thirdCollectionHeading": "Yozgi kollektsiya",
+	"cardtext21": "Vintage uslubi",
+	"cardtext22": "Uchib ketayotgan momaqaymoq",
+	"cardtext23": "Frantsiya Rivieras",
+	"cardtext24": "Dolly Qo‘y",
+	"cardtext25": "Alp o‘tlar",
+	"cardtext26": "Ilhomlantiruvchi",
+	"cardtext27": "Yashil lotus",
+	"cardtext28": "Tog‘li zamburug‘",
+	"cardtext29": "Sakura shoxlari",
+	"cardtext30": "Zaytun shoxlari",
+	"news-h2": "Yangiliklar",
+	"news-span": "tomonidan",
+	"newscard1": {
+		"author": "admin",
+		"title": "Mukammal gadjetlarni tanlash",
+		"description": "Yoqimli vodiy atrofimni bug' bilan to'ldirayotganda va kunduzgi quyosh yuqori ... "
+	},
+	"newscard2": {
+		"author": "admin",
+		"title": "Mukammal gadjetlarni tanlash",
+		"description": "Yoqimli vodiy atrofimni bug' bilan to'ldirayotganda va kunduzgi quyosh yuqori..."
+	},
+	"newscard3": {
+		"author": "admin",
+		"title": "Mukammal gadjetlarni tanlash",
+		"description": "Ko'pchilik o'zgartirishlardan aziyat chekkan ko'plab Lorem Ipsum parchalari mavjud, ammo ..."
+	},
+	"productcard-1": {
+		"text": "Kvadratlar",
+		"similars": {
+			"text1": "Zaytun shoxlari",
+			"text2": "Sakura shoxlari",
+			"text3": "Tog‘li zamburug‘",
+			"text4": "Yashil lotus"
+		}
+	},
+	"productcard-2": {
+		"text": "Ikat",
+		"similars": {
+			"text1": "Ilhomlantiruvchi",
+			"text2": "Alp o‘tlar",
+			"text3": "Dolly Qo‘y",
+			"text4": "Frantsiya Rivieras"
+		}
+	},
+	"productcard-3": {
+		"text": "Doiralar",
+		"similars": {
+			"text1": "Suv moviy (AB)",
+			"text2": "Plaid",
+			"text3": "Vintage uslubi",
+			"text4": "Uchib ketayotgan momaqaymoq"
+		}
+	},
+	"productcard-4": {
+		"text": "Geometriya ko‘k",
+		"similars": {
+			"text1": "Malaxit qutisi",
+			"text2": "Bahorning xushbo'y hidlari",
+			"text3": "Kuzgi yaproqlar (AB)",
+			"text4": "Moviy Breeze (AB)"
+		}
+	},
+	"productcard-5": {
+		"text": "Tropik barglar",
+		"similars": {
+			"text1": "Safari",
+			"text2": "Rangli ametist",
+			"text3": "Stucco bezak",
+			"text4": "Zümrüd (AB)"
+		}
+	},
+	"productcard-6": {
+		"text": "Bambi",
+		"similars": {
+			"text1": "Vizantiya",
+			"text2": "Kechki bog'",
+			"text3": "Marquis pati",
+			"text4": "Lavanda atirgullari"
+		}
+	},
+	"productcard-7": {
+		"text": "Vizantiya",
+		"similars": {
+			"text1": "Doiralar",
+			"text2": "Geometriya ko‘k",
+			"text3": "Tropik barglar",
+			"text4": "Bambi"
+		}
+	},
+	"productcard-8": {
+		"text": "Kechki bog'",
+		"similars": {
+			"text1": "Ikat",
+			"text2": "Kvadratlar",
+			"text3": "Tropik barglar",
+			"text4": "Bambi"
+		}
+	},
+	"productcard-9": {
+		"text": "Marquis pati",
+		"similars": {
+			"text1": "Zaytun shoxlari",
+			"text2": "Sakura shoxlari",
+			"text3": "Tog‘li zamburug‘",
+			"text4": "Yashil lotus"
+		}
+	},
+	"productcard-10": {
+		"text": "Lavanda atirgullari",
+		"similars": {
+			"text1": "Malaxit qutisi",
+			"text2": "Bahorning xushbo'y hidlari",
+			"text3": "Kuzgi yaproqlar (AB)",
+			"text4": "Moviy Breeze (AB)"
+		}
+	},
+	"productcard-11": {
+		"text": "Safari",
+		"similars": {
+			"text1": "Zaytun shoxlari",
+			"text2": "Sakura shoxlari",
+			"text3": "Tog‘li zamburug‘",
+			"text4": "Yashil lotus"
+		}
+	},
+	"productcard-12": {
+		"text": "Rangli ametist",
+		"similars": {
+			"text1": "Malaxit qutisi",
+			"text2": "Bahorning xushbo'y hidlari",
+			"text3": "Kuzgi yaproqlar (AB)",
+			"text4": "Moviy Breeze (AB)"
+		}
+	},
+	"productcard-13": {
+		"text": "Stucco bezak",
+		"similars": {
+			"text1": "Vizantiya",
+			"text2": "Kechki bog'",
+			"text3": "Marquis pati",
+			"text4": "Lavanda atirgullari"
+		}
+	},
+	"productcard-14": {
+		"text": "Zümrüd (AB)",
+		"similars": {
+			"text1": "Zaytun shoxlari",
+			"text2": "Sakura shoxlari",
+			"text3": "Tog‘li zamburug‘",
+			"text4": "Yashil lotus"
+		}
+	},
+	"productcard-15": {
+		"text": "Malaxit qutisi",
+		"similars": {
+			"text1": "Malaxit qutisi",
+			"text2": "Bahorning xushbo'y hidlari",
+			"text3": "Kuzgi yaproqlar (AB)",
+			"text4": "Moviy Breeze (AB)"
+		}
+	},
+	"productcard-16": {
+		"text": "Bahorning xushbo'y hidlari",
+		"similars": {
+			"text1": "Vizantiya",
+			"text2": "Kechki bog'",
+			"text3": "Marquis pati",
+			"text4": "Lavanda atirgullari"
+		}
+	},
+	"productcard-17": {
+		"text": "Kuzgi yaproqlar (AB)",
+		"similars": {
+			"text1": "Zaytun shoxlari",
+			"text2": "Sakura shoxlari",
+			"text3": "Tog‘li zamburug‘",
+			"text4": "Yashil lotus"
+		}
+	},
+	"productcard-18": {
+		"text": "Moviy Breeze (AB)",
+		"similars": {
+			"text1": "Zaytun shoxlari",
+			"text2": "Sakura shoxlari",
+			"text3": "Tog‘li zamburug‘",
+			"text4": "Yashil lotus"
+		}
+	},
+	"productcard-19": {
+		"text": "Suv moviy (AB)",
+		"similars": {
+			"text1": "Malaxit qutisi",
+			"text2": "Bahorning xushbo'y hidlari",
+			"text3": "Kuzgi yaproqlar (AB)",
+			"text4": "Moviy Breeze (AB)"
+		}
+	},
+	"productcard-20": {
+		"text": "Plaid",
+		"similars": {
+			"text1": "Vizantiya",
+			"text2": "Kechki bog'",
+			"text3": "Marquis pati",
+			"text4": "Lavanda atirgullari"
+		}
+	},
+	"productcard-21": {
+		"text": "Vintage uslubi",
+		"similars": {
+			"text1": "Vizantiya",
+			"text2": "Kechki bog'",
+			"text3": "Marquis pati",
+			"text4": "Lavanda atirgullari"
+		}
+	},
+	"productcard-22": {
+		"text": "Uchib ketayotgan momaqaymoq",
+		"similars": {
+			"text1": "Zaytun shoxlari",
+			"text2": "Sakura shoxlari",
+			"text3": "Tog‘li zamburug‘",
+			"text4": "Yashil lotus"
+		}
+	},
+	"productcard-23": {
+		"text": "Frantsiya Rivieras",
+		"similars": {
+			"text1": "Malaxit qutisi",
+			"text2": "Bahorning xushbo'y hidlari",
+			"text3": "Kuzgi yaproqlar (AB)",
+			"text4": "Moviy Breeze (AB)"
+		}
+	},
+	"productcard-24": {
+		"text": "Dolly Qo‘y",
+		"similars": {
+			"text1": "Vizantiya",
+			"text2": "Kechki bog'",
+			"text3": "Marquis pati",
+			"text4": "Lavanda atirgullari"
+		}
+	},
+	"productcard-25": {
+		"text": "Alp o‘tlar",
+		"similars": {
+			"text1": "Zaytun shoxlari",
+			"text2": "Sakura shoxlari",
+			"text3": "Tog‘li zamburug‘",
+			"text4": "Yashil lotus"
+		}
+	},
+	"productcard-26": {
+		"text": "Ilhomlantiruvchi",
+		"similars": {
+			"text1": "Vizantiya",
+			"text2": "Kechki bog'",
+			"text3": "Marquis pati",
+			"text4": "Lavanda atirgullari"
+		}
+	},
+	"productcard-27": {
+		"text": "Yashil lotus",
+		"similars": {
+			"text1": "Zaytun shoxlari",
+			"text2": "Sakura shoxlari",
+			"text3": "Tog‘li zamburug‘",
+			"text4": "Yashil lotus"
+		}
+	},
+	"productcard-28": {
+		"text": "Tog‘li zamburug‘",
+		"similars": {
+			"text1": "Malaxit qutisi",
+			"text2": "Bahorning xushbo'y hidlari",
+			"text3": "Kuzgi yaproqlar (AB)",
+			"text4": "Moviy Breeze (AB)"
+		}
+	},
+	"productcard-29": {
+		"text": "Sakura shoxlari",
+		"similars": {
+			"text1": "Zaytun shoxlari",
+			"text2": "Sakura shoxlari",
+			"text3": "Tog‘li zamburug‘",
+			"text4": "Yashil lotus"
+		}
+	},
+	"productcard-30": {
+		"text": "Zaytun shoxlari",
+		"similars": {
+			"text1": "Vizantiya",
+			"text2": "Kechki bog'",
+			"text3": "Marquis pati",
+			"text4": "Lavanda atirgullari"
+		}
+	},
+	"material": "Material",
+	"material-text": "paxta flanel",
+	"pillowcase": "Yostiq jild",
+	"piece": "bo‘lak",
+	"bed-sheet": "Choyshab",
+	"duvet-cover": "Ko'rpa jild",
+	"special-size": "Maxsus o'lcham",
+	"size": "O'lcham",
+	"manufacturer": "Ishlab chiqaruvchi",
+	"category": "Kategoriya",
+	"description": "Tavsif",
+	"reviews": "Sharhlar",
+	"reviews-p": "Hozircha sharhlar yo'q",
+	"reviews-p2": "Birinchi bo‘lib sharh qoldiring",
+	"reviews-p3": "Sizning elektron pochta manzilingiz chop etilmaydi. Majburiy maydonlar belgilangan",
+	"review-label1": "Ism",
+	"review-label2": "Email",
+	"review-label3": "Sizning sharhingiz",
+	"review-btn": "Yuborish",
+	"desc-p": "Yotoq to'plami",
+	"desc-p2": "Choyshab to'plami - bu uy-ro'zg'or buyumlari va yotoq xonasi bezaklari bo'lib, qulaylik va go'zallik uchun mo'ljallangan. Siz choyshablar, ko'rpalar, yostiqlar va boshqa aksessuarlarni o'z ichiga olgan turli xil to'plamlardan tanlashingiz mumkin. Ular turli dizaynlar, bosma naqshlar, tikuvlar yoki boshqa bezak elementlariga ega bo'lishi mumkin. Ularni tozalash va yuvish oson va tezdir. Ular yumshoq materiallardan tayyorlangan va yotoq xonangizni qulay va shinam qiladi.",
+	"similar-text": "O'xshash mahsulotlar",
+	"contact": "Aloqa",
+	"contact-input-name": "Sizning emailingiz",
+	"contact-input-phone": "Telefon raqamingiz",
+	"contact-input-textarea": "Xabaringizni bu yerga yozing",
+	"contact-btn": "Yuborish",
+	"contact-tel": "Tel",
+	"contact-address": "Manzil",
+	"contact-address-text": "Buxoro, Alpomysh ko'chasi 80.",
+	"about-p": "Buxoro matolari, Eco sumkalar, Buxoro matolari, Eco sumkalar. Fabrikamiz ko'p yillar davomida butun dunyo bo'ylab ishlatiladigan paxta matolarini ishlab chiqaradigan kompaniya bo'lib kelgan. Ushbu kompaniyaning asosiy maqsadi yuqori sifatli va arzon mahsulotlar ishlab chiqarishdir. Ushbu kompaniyaning ishlab chiqarish jarayoni to'liq ekologik jihatdan qulay. Kompaniya mijozlarning talablari va takliflariga ko'ra har qanday turdagi paxta xom ashyosini ishlab chiqarishi mumkin.",
+	"collection-search": "Bu yerdan qidiring",
+	"collection": "Kolleksiya",
+	"spring": "Bahor Kolleksiyasi",
+	"winter": "Qish Kolleksiyasi",
+	"summer": "Yoz Kolleksiyasi",
+	"autumn": "Kuz Kolleksiyasi",
+	"collection-span-showing": "1-16 dan 25 gacha ko‘rsatilmoqda",
+	"select-initial-sort": "Dastlabki tartib",
+	"select-by-popularity": "Ommaboplik bo'yicha",
+	"select-by-rating": "Reyting bo'yicha",
+	"select-by-novelty": "Yangilik bo'yicha",
+	"select-prices-ascending": "Narxlar: ortib boruvchi",
+	"select-prices-decending": "Narxlar: kamayuvchi",
+	"footer-p": "Buxoro Natural Product kompaniyasi ko'p yillar davomida butun dunyo bo'ylab ishlatiladigan paxta matolarini ishlab chiqaradigan kompaniya bo'lib kelgan.",
+	"footer-menu": "Menyu",
+	"footer-contact": "Kontaktlar",
+	"footer-p2": "Elektron pochtamizga obuna bo‘ling",
+	"footer-input": "Sizning emailingizni kiriting",
+	"footer-btn": "Obuna bo'lish",
+	"footer-p3": "© 2024 MCHJ BUKHARA NATURAL PRODUCT. Barcha huquqlar himoyalangan."
+}

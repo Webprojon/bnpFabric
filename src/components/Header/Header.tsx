@@ -3,21 +3,54 @@ import { Link, useLocation } from "react-router-dom";
 import ResponsiveMenu from "./header-top-menu";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useGlobalContext } from "../../context/global-context";
-import { flags, links } from "../../lib/data";
+import { flags } from "../../lib/data";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
 	const [title, setTitle] = useState("Home - LLC Bukhara Natural Product");
 	const { isMenuOpen, setIsMenuOpen } = useGlobalContext();
 	const location = useLocation();
 	const pathname = location.pathname;
+	const [selectedLanguage, setSelectedLanguage] = useState("");
+	const { t } = useTranslation();
+	const { i18n } = useTranslation();
 
 	useEffect(() => {
+		const initialLanguage =
+			typeof window !== "undefined"
+				? localStorage.getItem("i18nextLng") || "uz"
+				: "uz";
+		setSelectedLanguage(initialLanguage);
+
 		document.title = title;
 	}, [title]);
 
 	const handleClick = (language: string) => {
-		console.log(language);
+		console.log(selectedLanguage);
+		setSelectedLanguage(language);
+		i18n.changeLanguage(language);
+		localStorage.setItem("i18nextLng", language);
 	};
+
+	// Data
+	const links = [
+		{
+			linkName: t("linkHome"),
+			linkUrl: "/",
+		},
+		{
+			linkName: t("linkCollection"),
+			linkUrl: t("linkShopUrl"),
+		},
+		{
+			linkName: t("linkAbout"),
+			linkUrl: t("linkAboutUrl"),
+		},
+		{
+			linkName: t("linkcontact"),
+			linkUrl: t("linkContactUrl"),
+		},
+	];
 
 	return (
 		<header className="sticky top-0 bg-white z-[1000]">

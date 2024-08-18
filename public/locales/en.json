@@ -1,0 +1,405 @@
+{
+	"linkHome": "Home",
+	"linkCollection": "Collection",
+	"linkShopUrl": "/shop",
+	"linkAbout": "About Us",
+	"linkAboutUrl": "/about",
+	"linkcontact": "Contacts",
+	"linkContactUrl": "/contact",
+	"hometext1": "Bukhara",
+	"hometext2": "Natural",
+	"hometext3": "Products",
+	"homecard1": {
+		"title": "Free shipping",
+		"description": "Free shipping on all orders"
+	},
+	"homecard2": {
+		"title": "Return Guarantee",
+		"description": "30 day money back"
+	},
+	"homecard3": {
+		"title": "Online support 24/7",
+		"description": "Technical support 24/7"
+	},
+	"homecard4": {
+		"title": "Secure payment",
+		"description": "All payment methods accepted"
+	},
+	"notFoundProduct": "We don't have such product",
+	"collection-span": "Material quality",
+	"collection-h2": "Bukhara Natural Product",
+	"collection-p": "has been a company that produces cotton fabrics for use all over the world for many years",
+	"collection-p-2": "Bukhara Natural Product",
+	"collection-btn": "Collection",
+	"firstCollectionHeading": "Winter collection",
+	"cardtext1": "Squares",
+	"cardtext2": "Ikat",
+	"cardtext3": "Circles",
+	"cardtext4": "Geometry blue",
+	"cardtext5": "Tropical leaves",
+	"cardtext6": "Bambi",
+	"cardtext7": "Byzantium",
+	"cardtext8": "Evening garden",
+	"cardtext9": "Feather Marquis",
+	"cardtext10": "Lavender roses",
+	"secondCollectionHeading": "Autumn collection",
+	"cardtext11": "Safari",
+	"cardtext12": "Multicolored amethyst",
+	"cardtext13": "Stucco ornament",
+	"cardtext14": "Emerald (AB)",
+	"cardtext15": "Malachite box",
+	"cardtext16": "Scents of spring",
+	"cardtext17": "Autumn leaf fall (AB)",
+	"cardtext18": "Blue Breeze (AB)",
+	"cardtext19": "Water Blue (AB)",
+	"cardtext20": "Plaid",
+	"thirdCollectionHeading": "Summer collection",
+	"cardtext21": "Vintage style",
+	"cardtext22": "fluttering dandelion",
+	"cardtext23": "French Riviera",
+	"cardtext24": "Dolly the Sheep",
+	"cardtext25": "Alpine herbs",
+	"cardtext26": "Inspirational",
+	"cardtext27": "Green lotus",
+	"cardtext28": "Mountain cornflower",
+	"cardtext29": "Sakura branch",
+	"cardtext30": "Olive branch",
+	"news-h2": "News",
+	"news-span": "by",
+	"newscard1": {
+		"author": "admin",
+		"title": "How to choose perfect gadgets",
+		"description": "When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper s..."
+	},
+	"newscard2": {
+		"author": "admin",
+		"title": "How to choose perfect gadgets",
+		"description": "When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper..."
+	},
+	"newscard3": {
+		"author": "admin",
+		"title": "How to choose perfect gadgets",
+		"description": "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ..."
+	},
+	"productcard-1": {
+		"text": "Squares",
+		"similars": {
+			"text1": "Olive branch",
+			"text2": "Sakura branch",
+			"text3": "Mountain cornflower",
+			"text4": "Green lotus"
+		}
+	},
+	"productcard-2": {
+		"text": "Ikat",
+		"similars": {
+			"text1": "Inspirational",
+			"text2": "Alpine herbs",
+			"text3": "Dolly the Sheep",
+			"text4": "French Riviera"
+		}
+	},
+	"productcard-3": {
+		"text": "Circles",
+		"similars": {
+			"text1": "Water Blue (AB)",
+			"text2": "Plaid",
+			"text3": "Vintage style",
+			"text4": "fluttering dandelion"
+		}
+	},
+	"productcard-4": {
+		"text": "Geometry blue",
+		"similars": {
+			"text1": "Malachite box",
+			"text2": "Scents of spring",
+			"text3": "Autumn leaf fall (AB)",
+			"text4": "Blue Breeze (AB)"
+		}
+	},
+	"productcard-5": {
+		"text": "Tropical leaves",
+		"similars": {
+			"text1": "Safari",
+			"text2": "Multicolored amethyst",
+			"text3": "Stucco ornament",
+			"text4": "Emerald (AB)"
+		}
+	},
+	"productcard-6": {
+		"text": "Bembi",
+		"similars": {
+			"text1": "Byzantium",
+			"text2": "Evening garden",
+			"text3": "Feather Marquis",
+			"text4": "Lavender roses"
+		}
+	},
+	"productcard-7": {
+		"text": "Byzantium",
+		"similars": {
+			"text1": "Circles",
+			"text2": "Geometry blue",
+			"text3": "Tropical leaves",
+			"text4": "Bembi"
+		}
+	},
+	"productcard-8": {
+		"text": "Evening garden",
+		"similars": {
+			"text1": "Ikat",
+			"text2": "Squares",
+			"text3": "Tropical leaves",
+			"text4": "Bembi"
+		}
+	},
+	"productcard-9": {
+		"text": "Feather Marquis",
+		"similars": {
+			"text1": "Olive branch",
+			"text2": "Sakura branch",
+			"text3": "Mountain cornflower",
+			"text4": "Green lotus"
+		}
+	},
+	"productcard-10": {
+		"text": "Lavender roses",
+		"similars": {
+			"text1": "Malachite box",
+			"text2": "Scents of spring",
+			"text3": "Autumn leaf fall (AB)",
+			"text4": "Blue Breeze (AB)"
+		}
+	},
+	"productcard-11": {
+		"text": "Safari",
+		"similars": {
+			"text1": "Olive branch",
+			"text2": "Sakura branch",
+			"text3": "Mountain cornflower",
+			"text4": "Green lotus"
+		}
+	},
+	"productcard-12": {
+		"text": "Multicolored amethyst",
+		"similars": {
+			"text1": "Malachite box",
+			"text2": "Scents of spring",
+			"text3": "Autumn leaf fall (AB)",
+			"text4": "Blue Breeze (AB)"
+		}
+	},
+	"productcard-13": {
+		"text": "Stucco ornament",
+		"similars": {
+			"text1": "Byzantium",
+			"text2": "Evening garden",
+			"text3": "Feather Marquis",
+			"text4": "Lavender roses"
+		}
+	},
+	"productcard-14": {
+		"text": "Emerald (AB)",
+		"similars": {
+			"text1": "Olive branch",
+			"text2": "Sakura branch",
+			"text3": "Mountain cornflower",
+			"text4": "Green lotus"
+		}
+	},
+	"productcard-15": {
+		"text": "Malachite box",
+		"similars": {
+			"text1": "Malachite box",
+			"text2": "Scents of spring",
+			"text3": "Autumn leaf fall (AB)",
+			"text4": "Blue Breeze (AB)"
+		}
+	},
+	"productcard-16": {
+		"text": "Scents of spring",
+		"similars": {
+			"text1": "Byzantium",
+			"text2": "Evening garden",
+			"text3": "Feather Marquis",
+			"text4": "Lavender roses"
+		}
+	},
+	"productcard-17": {
+		"text": "Autumn leaf fall (AB)",
+		"similars": {
+			"text1": "Circles",
+			"text2": "Geometry blue",
+			"text3": "Tropical leaves",
+			"text4": "Bembi"
+		}
+	},
+	"productcard-18": {
+		"text": "Blue Breeze (AB)",
+		"similars": {
+			"text1": "Inspirational",
+			"text2": "Alpine herbs",
+			"text3": "Dolly the Sheep",
+			"text4": "French Riviera"
+		}
+	},
+	"productcard-19": {
+		"text": "Water Blue (AB)",
+		"similars": {
+			"text1": "Inspirational",
+			"text2": "Alpine herbs",
+			"text3": "Dolly the Sheep",
+			"text4": "French Riviera"
+		}
+	},
+	"productcard-20": {
+		"text": "Plaid",
+		"similars": {
+			"text1": "Water Blue (AB)",
+			"text2": "Plaid",
+			"text3": "Vintage style",
+			"text4": "fluttering dandelion"
+		}
+	},
+	"productcard-21": {
+		"text": "Vintage style",
+		"similars": {
+			"text1": "Circles",
+			"text2": "Geometry blue",
+			"text3": "Tropical leaves",
+			"text4": "Bembi"
+		}
+	},
+	"productcard-22": {
+		"text": "fluttering dandelion",
+		"similars": {
+			"text1": "Byzantium",
+			"text2": "Evening garden",
+			"text3": "Feather Marquis",
+			"text4": "Lavender roses"
+		}
+	},
+	"productcard-23": {
+		"text": "French Riviera",
+		"similars": {
+			"text1": "Inspirational",
+			"text2": "Alpine herbs",
+			"text3": "Dolly the Sheep",
+			"text4": "French Riviera"
+		}
+	},
+	"productcard-24": {
+		"text": "Dolly the Sheep",
+		"similars": {
+			"text1": "Malachite box",
+			"text2": "Scents of spring",
+			"text3": "Autumn leaf fall (AB)",
+			"text4": "Blue Breeze (AB)"
+		}
+	},
+	"productcard-25": {
+		"text": "Alpine herbs",
+		"similars": {
+			"text1": "Water Blue (AB)",
+			"text2": "Plaid",
+			"text3": "Vintage style",
+			"text4": "fluttering dandelion"
+		}
+	},
+	"productcard-26": {
+		"text": "Inspirational",
+		"similars": {
+			"text1": "Circles",
+			"text2": "Geometry blue",
+			"text3": "Tropical leaves",
+			"text4": "Bembi"
+		}
+	},
+	"productcard-27": {
+		"text": "Green lotus",
+		"similars": {
+			"text1": "Circles",
+			"text2": "Geometry blue",
+			"text3": "Tropical leaves",
+			"text4": "Bembi"
+		}
+	},
+	"productcard-28": {
+		"text": "Mountain cornflower",
+		"similars": {
+			"text1": "Byzantium",
+			"text2": "Evening garden",
+			"text3": "Feather Marquis",
+			"text4": "Lavender roses"
+		}
+	},
+	"productcard-29": {
+		"text": "Sakura branch",
+		"similars": {
+			"text1": "Water Blue (AB)",
+			"text2": "Plaid",
+			"text3": "Vintage style",
+			"text4": "fluttering dandelion"
+		}
+	},
+	"productcard-30": {
+		"text": "Olive branch",
+		"similars": {
+			"text1": "Circles",
+			"text2": "Geometry blue",
+			"text3": "Tropical leaves",
+			"text4": "Bembi"
+		}
+	},
+	"material": "Material",
+	"material-text": "cotton flannel",
+	"pillowcase": "Pillowcase",
+	"piece": "piece",
+	"bed-sheet": "Bed sheet",
+	"duvet-cover": "Duvet cover",
+	"special-size": "Special size",
+	"size": "Size",
+	"manufacturer": "Manufacturer",
+	"category": "Category",
+	"description": "Description",
+	"reviews": "Reviews",
+	"reviews-p": "There are no reviews yet",
+	"reviews-p2": "Be the first to review",
+	"reviews-p3": "Your email address will not be published. Required fields are marked",
+	"review-label1": "Name",
+	"review-label2": "Email",
+	"review-label3": "Your review",
+	"review-btn": "Send",
+	"desc-p": "Bedding set",
+	"desc-p2": "Bed linen is a household item and bedroom decor designed for comfort and beauty. You can choose from a variety of bed sets that include sheets, blankets, pillow crafts and other accessories. They have various designs, prints, embroideries or other design elements. They are easy and quick to clean and clean. They are made from soft materials and they make your bedrooms cozy and cozy.",
+	"similar-text": "Similar products",
+	"contact": "Contact",
+	"contact-input-name": "Your email",
+	"contact-input-phone": "Phone number",
+	"contact-input-textarea": "Your message here",
+	"contact-btn": "Submit",
+	"contact-tel": "Tel",
+	"contact-address": "Address",
+	"contact-address-text": "Bukhara, st. Alpomysh 80.",
+	"about-p": "Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsOur factory has been a company that produces cotton fabrics for use all over the world for many years.The main goal of this company is to produce high quality and cost effective products.The production process of this company is completely environmentally friendly.The company can produce any types of cotton raw materials according to the requirements and suggestions of customers.",
+	"collection-search": "Search here",
+	"collection": "Collection",
+	"spring": "Spring Collection",
+	"winter": "Winter Collection",
+	"summer": "Summer Collection",
+	"autumn": "Autumn Collection",
+	"collection-span-showing": "Showing 1-16 of 25",
+	"select-initial-sort": "Initial sort",
+	"select-by-popularity": "By popularity",
+	"select-by-rating": "By rating",
+	"select-by-novelty": "By novelty",
+	"select-prices-ascending": "Prices: ascending",
+	"select-prices-decending": "Prices: ascending",
+	"footer-p": "Bukhara Natural Product has been a company that produces cotton fabrics for many years for use all over the world.",
+	"footer-menu": "Menu",
+	"footer-contact": "Contacts",
+	"footer-p2": "Subscribe to our email",
+	"footer-input": "Enter Your Email",
+	"footer-btn": "Subscribe",
+	"footer-p3": "© 2024 LLC BUKHARA NATURAL PRODUCT. All rights reserved."
+}

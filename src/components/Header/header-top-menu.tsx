@@ -2,13 +2,15 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 import { useGlobalContext } from "../../context/global-context";
-import { flags, links } from "../../lib/data";
+import { flags } from "../../lib/data";
+import { useTranslation } from "react-i18next";
 
 export default function ResponsiveMenu() {
 	const { isMenuOpen, setIsMenuOpen } = useGlobalContext();
 	const [title, setTitle] = useState("Home - LLC Bukhara Natural Product");
 	const location = useLocation();
 	const pathname = location.pathname;
+	const { t } = useTranslation();
 
 	useEffect(() => {
 		document.title = title;
@@ -21,6 +23,26 @@ export default function ResponsiveMenu() {
 	const handleClick = (language: string) => {
 		console.log(language);
 	};
+
+	// Data
+	const links = [
+		{
+			linkName: t("linkHome"),
+			linkUrl: "/",
+		},
+		{
+			linkName: t("linkCollection"),
+			linkUrl: t("linkShopUrl"),
+		},
+		{
+			linkName: t("linkAbout"),
+			linkUrl: t("linkAboutUrl"),
+		},
+		{
+			linkName: t("linkcontact"),
+			linkUrl: t("linkContactUrl"),
+		},
+	];
 
 	return (
 		<header className="md:hidden">

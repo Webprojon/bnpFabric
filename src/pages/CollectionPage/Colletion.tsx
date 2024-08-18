@@ -1,9 +1,11 @@
 import { IoChevronForward, IoSearch } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Colletion() {
 	const [toggle, setToggle] = useState(false);
+	const { t } = useTranslation();
 	const formatTextForUrl = (text: string) =>
 		text.toLowerCase().replace(/\s+/g, "-");
 
@@ -13,6 +15,7 @@ export default function Colletion() {
 		});
 	};
 
+	// Data
 	const collections = [
 		{
 			id: 1,
@@ -204,7 +207,7 @@ export default function Colletion() {
 						<input
 							type="text"
 							required
-							placeholder="Search here"
+							placeholder={t("collection-search")}
 							className="pl-7 pr-16 py-[.9rem] rounded-[35px] text-[17px] outline-none w-full input-bg-collection text-black/50 placeholder:text-black/50"
 						/>
 						<div className="cursor-pointer absolute right-[6px] top-1/2 -translate-y-1/2 rounded-full p-3 bg-red-500 text-white">
@@ -217,7 +220,7 @@ export default function Colletion() {
 							onClick={() => setToggle(!toggle)}
 							className="flex items-center justify-between"
 						>
-							<span className="font-bold text-[22px]">Collection</span>
+							<span className="font-bold text-[22px]">{t("collection")}</span>
 							<IoChevronForward
 								className={`size-5 chevron-icon ${toggle ? "rotated" : ""}`}
 							/>
@@ -226,16 +229,16 @@ export default function Colletion() {
 						{!toggle && (
 							<div className="mx-auto md:mx-0 flex flex-col gap-y-6 md:gap-y-2 text-black/70 text-[17px] mt-6">
 								<Link to="/" className="hover:text-red-600 hover:font-medium">
-									Spring Collection
+									{t("spring")}
 								</Link>
 								<Link to="/" className="hover:text-red-600 hover:font-medium">
-									Winter Collection
+									{t("winter")}
 								</Link>
 								<Link to="/" className="hover:text-red-600 hover:font-medium">
-									Summer Collection
+									{t("summer")}
 								</Link>
 								<Link to="/" className="hover:text-red-600 hover:font-medium">
-									Autumn Collection
+									{t("autumn")}
 								</Link>
 							</div>
 						)}
@@ -246,17 +249,23 @@ export default function Colletion() {
 					<div className="flex flex-col md:flex-row items-start md:items-center justify-between">
 						<div>
 							<h2 className="font-bold text-[26px] md:text-[36px] mb-3 leading-none">
-								Collection
+								{t("collection")}
 							</h2>
-							<span className="text-black/80">Showing 1-16 of 25</span>
+							<span className="text-black/80">
+								{t("collection-span-showing")}
+							</span>
 						</div>
 						<select className="mt-5 rounded-[24px] md:rounded-[27px] cursor-pointer outline-none appearance-none bg-black text-white py-3 md:py-[14px] pl-7 px-1">
-							<option value="initial-sort">Initial sort</option>
-							<option value="by-popularity">By popularity</option>
-							<option value="by-rating">By rating</option>
-							<option value="by-novelty">By novelty</option>
-							<option value="prices-ascending">Prices: ascending</option>
-							<option value="prices-decending">Prices: ascending</option>
+							<option value="initial-sort">{t("select-initial-sort")}</option>
+							<option value="by-popularity">{t("select-by-popularity")}</option>
+							<option value="by-rating">{t("select-by-rating")}</option>
+							<option value="by-novelty">{t("select-by-novelty")}</option>
+							<option value="prices-ascending">
+								{t("select-prices-ascending")}
+							</option>
+							<option value="prices-decending">
+								{t("select-prices-decending")}
+							</option>
 						</select>
 					</div>
 

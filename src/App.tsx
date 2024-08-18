@@ -8,18 +8,21 @@ import Network from "./components/Network";
 import { GlobalContextProvider } from "./context/global-context";
 import ProductDetails from "./pages/HomePage/Collection-Product";
 import Footer from "./components/Footer/Footer";
+import { useTranslation } from "react-i18next";
 
 function App() {
+	const { t } = useTranslation();
+
 	return (
 		<section className="max-w-[1540px] mx-auto overflow-x-hidden select-none no-scroll">
 			<GlobalContextProvider>
 				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<About />} />
+					<Route path={t("linkAboutUrl")} element={<About />} />
 					<Route path="/shop" element={<Colletion />} />
 					<Route path="/product/:text" element={<ProductDetails />} />
-					<Route path="/contact" element={<Contact />} />
+					<Route path={t("linkContactUrl")} element={<Contact />} />
 				</Routes>
 				<Footer />
 				<Network />

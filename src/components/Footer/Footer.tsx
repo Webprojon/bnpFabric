@@ -1,6 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+	const { t } = useTranslation();
+
+	const scrollTop = () => {
+		window.scrollTo({
+			top: 0,
+		});
+	};
+
 	return (
 		<footer>
 			<div
@@ -14,26 +23,30 @@ export default function Footer() {
 						src="https://www.bnpfabric.uz/wp-content/uploads/2019/10/logo.2230098a.png"
 					/>
 					<p className="w-[250px] mt-6 md:mt-4 text-black/60">
-						'Bukhara Natural Product' has been a company that produces cotton
-						fabrics for many years for use all over the world.
+						{t("footer-p")}
 					</p>
 				</div>
 
-				<div className="flex flex-col space-y-3 lg:space-y-2 text-black/75">
+				<div className="text-black/75">
 					<p className="font-bold text-[24px] md:text-[20px] mb-1 md:mb-4">
-						Menu
+						{t("footer-menu")}
 					</p>
-					<Link to="/">Home</Link>
-					<Link to="/about">About Us</Link>
-					<Link to="/collection">Collection</Link>
-					<Link to="/contact">Contacts</Link>
+					<div
+						onClick={scrollTop}
+						className="flex flex-col space-y-3 lg:space-y-2"
+					>
+						<Link to="/">{t("linkHome")}</Link>
+						<Link to={t("linkShopUrl")}>{t("linkCollection")}</Link>
+						<Link to={t("linkAboutUrl")}>{t("linkAbout")}</Link>
+						<Link to={t("linkContactUrl")}>{t("linkcontact")}</Link>
+					</div>
 				</div>
 
 				<div className="flex flex-col space-y-3 lg:space-y-1 text-black/75">
 					<p className="font-bold text-[24px] md:text-[20px] mb-1 md:mb-4">
-						Contacts
+						{t("footer-contact")}
 					</p>
-					<span>Bukhara, st. Alpomysh 80.</span>
+					<span>{t("contact-address-text")}</span>
 					<a href="mailto:Bnpuz@bk.ru" target="blank">
 						Bnpuz@bk.ru
 					</a>
@@ -50,23 +63,23 @@ export default function Footer() {
 				</div>
 
 				<div>
-					<p className="font-bold text-[20px] mb-4">Subscribe to our email</p>
+					<p className="font-bold text-[20px] mb-4">{t("footer-p2")}</p>
 					<form className="relative w-[100%] xs:w-[70%] sm:w-[60%] md:w-[500px]">
 						<input
 							type="text"
 							required
-							placeholder="Enter Your Email"
+							placeholder={t("footer-input")}
 							className="px-4 sm:px-8 py-3 sm:py-[1.1rem] rounded-[35px] outline-none w-[100%] md:w-[500px] input-bg text-black/40 placeholder:text-black/40"
 						/>
 						<button className="absolute right-[5px] sm:right-[.5rem] top-1/2 -translate-y-1/2 rounded-[25px] px-5 sm:px-9 py-[7px] sm:py-[.7rem] bg-red-600 text-white hover:bg-black transition-all">
-							Subscribe
+							{t("footer-btn")}
 						</button>
 					</form>
 				</div>
 			</div>
 
 			<div className="bg-black py-4 md:py-6 px-7 text-gray-300 text-[14px] md:text-[17px]">
-				<p>© 2024 LLC "BUKHARA NATURAL PRODUCT". All rights reserved.</p>
+				<p>{t("footer-p3")}</p>
 			</div>
 		</footer>
 	);
