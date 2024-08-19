@@ -1,5 +1,5 @@
 import { IoChevronForward, IoSearch } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -17,6 +17,13 @@ export default function Colletion() {
 	};
 
 	// Data
+	const collections = [
+		{ path: "/shop/spring-collection", label: "spring" },
+		{ path: "/shop/winter-collection", label: "winter" },
+		{ path: "/shop/summer-collection", label: "summer" },
+		{ path: "/shop/autumn-collection", label: "autumn" },
+	];
+
 	const products = [
 		{
 			id: 1,
@@ -199,6 +206,9 @@ export default function Colletion() {
 			category: t("thirdCollectionHeading"),
 		},
 	];
+	const pathname = useLocation().pathname;
+	const params = useParams().category;
+	const categories = products.filter((item) => item.category === params);
 
 	return (
 		<section className="xs:mt-5 px-2 lg:px-0 mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
@@ -229,30 +239,20 @@ export default function Colletion() {
 
 						{!toggle && (
 							<div className="mx-auto md:mx-0 flex flex-col gap-y-6 md:gap-y-2 text-black/70 text-[17px] mt-6">
-								<Link
-									to="/shop/spring-collection"
-									className="hover:text-red-600 hover:font-medium"
-								>
-									{t("spring")}
-								</Link>
-								<Link
-									to="/shop/winter-collection"
-									className="hover:text-red-600 hover:font-medium"
-								>
-									{t("winter")}
-								</Link>
-								<Link
-									to="/shop/summer-collection"
-									className="hover:text-red-600 hover:font-medium"
-								>
-									{t("summer")}
-								</Link>
-								<Link
-									to="/shop/autumn-collection"
-									className="hover:text-red-600 hover:font-medium"
-								>
-									{t("autumn")}
-								</Link>
+								{collections.map((collection, index) => (
+									<Link
+										key={index}
+										to={collection.path}
+										className={`
+											${
+												pathname === collection.path
+													? "text-red-600 font-medium"
+													: ""
+											} hover:text-red-600`}
+									>
+										{t(collection.label)}
+									</Link>
+								))}
 							</div>
 						)}
 					</div>
@@ -261,30 +261,31 @@ export default function Colletion() {
 				<div className="w-full">
 					<div className="flex flex-col md:flex-row items-start md:items-center justify-between">
 						<div>
-							<h2 className="font-bold text-[26px] md:text-[36px] mb-3 leading-none">
-								{/*{t("collection")}*/}
+							<h2 className="font-bold text-[26px] capitalize md:text-[32px] mb-3 leading-none">
+								{pathname === "/shop" ? "Collection" : ""}
 							</h2>
+							{categories.slice(0, 1).map((item) => (
+								<h2 className="font-bold text-[26px] capitalize md:text-[32px] mb-3 leading-none">
+									{item.category.replace("-", " ")}
+								</h2>
+							))}
 							<span className="text-black/80">
 								{t("collection-span-showing")}
 							</span>
 						</div>
-						<select className="mt-5 rounded-[24px] md:rounded-[27px] cursor-pointer outline-none appearance-none bg-black text-white py-3 md:py-[14px] pl-7 px-1">
+						<select
+							className="mt-5 rounded-[24px] md:rounded-[27px] cursor-pointer outline-none appearance-none bg-black text-white 
+						py-3 md:py-[14px] pl-10 px-4"
+						>
 							<option value="initial-sort">{t("select-initial-sort")}</option>
 							<option value="by-popularity">{t("select-by-popularity")}</option>
 							<option value="by-rating">{t("select-by-rating")}</option>
 							<option value="by-novelty">{t("select-by-novelty")}</option>
-							<option value="prices-ascending">
-								{t("select-prices-ascending")}
-							</option>
-							<option value="prices-decending">
-								{t("select-prices-decending")}
-							</option>
 						</select>
 					</div>
 
 					<div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-8 sm:gap-x-8 md:gap-y-12">
-						{products
-							.filter((item) => item.category === t("secondCollectionHeading"))
+						{(pathname === "/shop" ? products : categories)
 							.slice(0, 8)
 							.map((item, index) => (
 								<Link

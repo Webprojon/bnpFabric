@@ -12,17 +12,17 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
 	return (
-		<section className="max-w-[1540px] mx-auto overflow-x-hidden no-scroll">
+		<section className="max-w-[1540px] mx-auto select-none overflow-x-hidden no-scroll">
 			<GlobalContextProvider>
 				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/shop" element={<Colletion />}>
-						<Route path="spring-collection" />
-						<Route path="winter-collection" />
-						<Route path="summer-collection" />
-						<Route path="autumn-collection" />
+						<Route path="/shop/:category" />
+						<Route path="/shop/:category" />
+						<Route path="/shop/:category" />
+						<Route path="/shop/:category" />
 					</Route>
 					<Route path="/product/:text" element={<ProductDetails />} />
 					<Route path="/contact" element={<Contact />} />
