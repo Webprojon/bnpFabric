@@ -1,8 +1,42 @@
 import { Link } from "react-router-dom";
-import firstCollectionImg from "../../assets/images/111.png";
-import secondCollectionImg from "../../assets/images/111-1.png";
-import thirdCollectionImg from "../../assets/images/111-2.png";
 import { useTranslation } from "react-i18next";
+// Heading Imgages
+import firstCollectionImg from "../../assets/images/winter-imgs/111.png";
+import secondCollectionImg from "../../assets/images/autumn-imgs/111-1.png";
+import thirdCollectionImg from "../../assets/images/summer-imgs/111-2.png";
+// Winter Images
+import squares from "../../assets/images/winter-imgs/squares.jpg";
+import ikat from "../../assets/images/winter-imgs/ikat.jpg";
+import circles from "../../assets/images/winter-imgs/circles.jpg";
+import geometryBlue from "../../assets/images/winter-imgs/geometry-blue.jpg";
+import tropicalLeaves from "../../assets/images/winter-imgs/tropical-leaves.jpg";
+import bambi from "../../assets/images/winter-imgs/bambi.jpg";
+import byzantium from "../../assets/images/winter-imgs/byzantium.jpg";
+import eveningGarden from "../../assets/images/winter-imgs/evening-garden.jpg";
+import featherMarquis from "../../assets/images/winter-imgs/feather-marquis.jpg";
+import lavenderRoses from "../../assets/images/winter-imgs/lavender-roses.jpg";
+// Autumn Images
+import safari from "../../assets/images/autumn-imgs/safari.jpg";
+import multicoloredAmethyst from "../../assets/images/autumn-imgs/multicolored-amethyst.jpg";
+import stuccoOrnament from "../../assets/images/autumn-imgs/stucco-ornament.jpg";
+import emerald from "../../assets/images/autumn-imgs/emerald-(ab).jpg";
+import malachiteBox from "../../assets/images/autumn-imgs/malachite-box.jpg";
+import scentsSpring from "../../assets/images/autumn-imgs/scents-of-spring.jpg";
+import autumnLeafFall from "../../assets/images/autumn-imgs/autumn-leaf-fall.jpg";
+import blueBreeze from "../../assets/images/autumn-imgs/blue-breeze.jpg";
+import waterBlue from "../../assets/images/autumn-imgs/water-blue.jpg";
+import plaid from "../../assets/images/autumn-imgs/plaid.jpg";
+// Summer Images
+import vintageStyle from "../../assets/images/summer-imgs/vintage-style.jpg";
+import flutteringDandelion from "../../assets/images/summer-imgs/fluttering-dandelion.jpg";
+import frenchRiviera from "../../assets/images/summer-imgs/french-riviera.jpg";
+import dollySheep from "../../assets/images/summer-imgs/dolly-the-sheep.jpg";
+import alpineHerbs from "../../assets/images/summer-imgs/alpine-herbs.jpg";
+import inspirational from "../../assets/images/summer-imgs/inspirational.jpg";
+import greenLotus from "../../assets/images/summer-imgs/green-lotus.jpg";
+import mountainCornflower from "../../assets/images/summer-imgs/mountain-cornflower.jpg";
+import sakuraBranch from "../../assets/images/summer-imgs/sakura-branch.jpg";
+import oliveBranch from "../../assets/images/summer-imgs/olive-branch.jpg";
 
 export default function HomeCollections() {
 	const { t } = useTranslation();
@@ -24,52 +58,52 @@ export default function HomeCollections() {
 			cards: [
 				{
 					id: 1,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-73-scaled-2550x1912.jpg",
+					src: squares,
 					text: t("cardtext1"),
 				},
 				{
 					id: 2,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-72-scaled-2550x1912.jpg",
+					src: ikat,
 					text: t("cardtext2"),
 				},
 				{
 					id: 3,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-71-scaled-2550x1912.jpg",
+					src: circles,
 					text: t("cardtext3"),
 				},
 				{
 					id: 4,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-70-scaled-2550x1912.jpg",
+					src: geometryBlue,
 					text: t("cardtext4"),
 				},
 				{
 					id: 5,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-69-1-scaled-2550x1912.jpg",
+					src: tropicalLeaves,
 					text: t("cardtext5"),
 				},
 				{
 					id: 6,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-68-scaled-2550x1912.jpg",
+					src: bambi,
 					text: t("cardtext6"),
 				},
 				{
 					id: 7,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-67-scaled-2550x1912.jpg",
+					src: byzantium,
 					text: t("cardtext7"),
 				},
 				{
 					id: 8,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-66-scaled-2550x1912.jpg",
+					src: eveningGarden,
 					text: t("cardtext8"),
 				},
 				{
 					id: 9,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-65-scaled-2550x1912.jpg",
+					src: featherMarquis,
 					text: t("cardtext9"),
 				},
 				{
 					id: 10,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-64-scaled-2550x1912.jpg",
+					src: lavenderRoses,
 					text: t("cardtext10"),
 				},
 			],
@@ -81,52 +115,52 @@ export default function HomeCollections() {
 			cards: [
 				{
 					id: 11,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-50-scaled-2550x1912.jpg",
+					src: safari,
 					text: t("cardtext11"),
 				},
 				{
 					id: 12,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-49-scaled-2550x1912.jpg",
+					src: multicoloredAmethyst,
 					text: t("cardtext12"),
 				},
 				{
 					id: 13,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-48-scaled-2550x1912.jpg",
+					src: stuccoOrnament,
 					text: t("cardtext13"),
 				},
 				{
 					id: 14,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-47-scaled-2550x1912.jpg",
+					src: emerald,
 					text: t("cardtext14"),
 				},
 				{
 					id: 15,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-46-scaled-2550x1912.jpg",
+					src: malachiteBox,
 					text: t("cardtext15"),
 				},
 				{
 					id: 16,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-45-scaled-2550x1912.jpg",
+					src: scentsSpring,
 					text: t("cardtext16"),
 				},
 				{
 					id: 17,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-44-scaled-2550x1912.jpg",
+					src: autumnLeafFall,
 					text: t("cardtext17"),
 				},
 				{
 					id: 18,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-43-scaled-2550x1912.jpg",
+					src: blueBreeze,
 					text: t("cardtext18"),
 				},
 				{
 					id: 19,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-42-scaled-2550x1912.jpg",
+					src: waterBlue,
 					text: t("cardtext19"),
 				},
 				{
 					id: 20,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-41-scaled-2550x1912.jpg",
+					src: plaid,
 					text: t("cardtext20"),
 				},
 			],
@@ -138,52 +172,52 @@ export default function HomeCollections() {
 			cards: [
 				{
 					id: 21,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-24-scaled-2550x1912.jpg",
+					src: vintageStyle,
 					text: t("cardtext21"),
 				},
 				{
 					id: 22,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-23-scaled-2550x1912.jpg",
+					src: flutteringDandelion,
 					text: t("cardtext22"),
 				},
 				{
 					id: 23,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-22-scaled-2550x1912.jpg",
+					src: frenchRiviera,
 					text: t("cardtext23"),
 				},
 				{
 					id: 24,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-21-1014x760.jpg",
+					src: dollySheep,
 					text: t("cardtext24"),
 				},
 				{
 					id: 25,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-20-scaled-2550x1912.jpg",
+					src: alpineHerbs,
 					text: t("cardtext25"),
 				},
 				{
 					id: 26,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-19-scaled-2550x1912.jpg",
+					src: inspirational,
 					text: t("cardtext26"),
 				},
 				{
 					id: 27,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-18-scaled-2550x1912.jpg",
+					src: greenLotus,
 					text: t("cardtext27"),
 				},
 				{
 					id: 28,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-17-scaled-2550x1912.jpg",
+					src: mountainCornflower,
 					text: t("cardtext28"),
 				},
 				{
 					id: 29,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-16-scaled-2550x1912.jpg",
+					src: sakuraBranch,
 					text: t("cardtext29"),
 				},
 				{
 					id: 30,
-					src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-15-scaled-2550x1912.jpg",
+					src: oliveBranch,
 					text: t("cardtext30"),
 				},
 			],

@@ -3,6 +3,39 @@ import { useState } from "react";
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
 import { useTranslation } from "react-i18next";
+// Winter Images
+import squares from "../../assets/images/winter-products/squares.jpg";
+import ikat from "../../assets/images/winter-products/ikat.jpg";
+import circles from "../../assets/images/winter-products/circles.jpg";
+import geometryBlue from "../../assets/images/winter-products/geometryBlue.jpg";
+import tropicalLeaves from "../../assets/images/winter-products/tropicalLeaves.jpg";
+import bambi from "../../assets/images/winter-products/bambi.jpg";
+import byzantium from "../../assets/images/winter-products/byzantium.jpg";
+import eveningGarden from "../../assets/images/winter-products/eveningGarden.jpg";
+import featherMarquis from "../../assets/images/winter-products/featherMarquis.jpg";
+import lavenderRoses from "../../assets/images/winter-products/lavenderRoses.jpg";
+// Autumn Images
+import safari from "../../assets/images/autumn-products/safari.jpg";
+import multicoloredAmethyst from "../../assets/images/autumn-products/multicoloredAmethyst.jpg";
+import stuccoOrnament from "../../assets/images/autumn-products/stuccoOrnament.jpg";
+import emerald from "../../assets/images/autumn-products/emerald.jpg";
+import malachiteBox from "../../assets/images/autumn-products/malachiteBox.jpg";
+import scentsSpring from "../../assets/images/autumn-products/scentsSpring.jpg";
+import autumnLeafFall from "../../assets/images/autumn-products/autumnLeaf.jpg";
+import blueBreeze from "../../assets/images/autumn-products/blueBreeze.jpg";
+import waterBlue from "../../assets/images/autumn-products/waterBlue.jpg";
+import plaid from "../../assets/images/autumn-products/plaid.jpg";
+// Summer Images
+import vintageStyle from "../../assets/images/summer-products/vintageStyle.jpg";
+import flutteringDandelion from "../../assets/images/summer-products/flutteringDandelion.jpg";
+import frenchRiviera from "../../assets/images/summer-products/frenchRiviera.jpg";
+import dollySheep from "../../assets/images/summer-products/dollySheep.jpg";
+import alpineHerbs from "../../assets/images/summer-products/alpineHerbs.jpg";
+import inspirational from "../../assets/images/summer-products/inspirational.jpg";
+import greenLotus from "../../assets/images/summer-products/greeLotus.jpg";
+import mountainCornflower from "../../assets/images/summer-products/mountainCornflower.jpg";
+import sakuraBranch from "../../assets/images/summer-products/sakuraBranch.jpg";
+import oliveBranch from "../../assets/images/summer-products/oliveBranch.jpg";
 
 export default function ProductDetails() {
 	const [isActivePage, setIsActivePage] = useState(false);
@@ -13,7 +46,7 @@ export default function ProductDetails() {
 	const products = [
 		{
 			id: 1,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-73-scaled.jpg",
+			src: squares,
 			text: t("productcard-1.text"),
 			category: t("firstCollectionHeading"),
 			similars: [
@@ -41,7 +74,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 2,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-72-768x768.jpg",
+			src: ikat,
 			text: t("productcard-2.text"),
 			category: t("firstCollectionHeading"),
 			similars: [
@@ -69,7 +102,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 3,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-71-scaled.jpg",
+			src: circles,
 			text: t("productcard-3.text"),
 			category: t("firstCollectionHeading"),
 			similars: [
@@ -97,7 +130,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 4,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-70-scaled.jpg",
+			src: geometryBlue,
 			text: t("productcard-4.text"),
 			category: t("firstCollectionHeading"),
 			similars: [
@@ -125,7 +158,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 5,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-69-1-scaled.jpg",
+			src: tropicalLeaves,
 			text: t("productcard-5.text"),
 			category: t("firstCollectionHeading"),
 			similars: [
@@ -153,7 +186,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 6,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-68-scaled.jpg",
+			src: bambi,
 			text: t("productcard-6.text"),
 			category: t("firstCollectionHeading"),
 			similars: [
@@ -181,7 +214,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 7,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-67-scaled.jpg",
+			src: byzantium,
 			text: t("productcard-7.text"),
 			category: t("firstCollectionHeading"),
 			similars: [
@@ -209,7 +242,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 8,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-66-scaled.jpg",
+			src: eveningGarden,
 			text: t("productcard-8.text"),
 			category: t("firstCollectionHeading"),
 			similars: [
@@ -237,7 +270,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 9,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-65-scaled.jpg",
+			src: featherMarquis,
 			text: t("productcard-9.text"),
 			category: t("firstCollectionHeading"),
 			similars: [
@@ -265,7 +298,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 10,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-64-scaled.jpg",
+			src: lavenderRoses,
 			text: t("productcard-10.text"),
 			category: t("firstCollectionHeading"),
 			similars: [
@@ -293,7 +326,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 11,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-50-scaled.jpg",
+			src: safari,
 			text: t("productcard-11.text"),
 			category: t("secondCollectionHeading"),
 			similars: [
@@ -321,7 +354,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 12,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-49-scaled.jpg",
+			src: multicoloredAmethyst,
 			text: t("productcard-12.text"),
 			category: t("secondCollectionHeading"),
 			similars: [
@@ -349,7 +382,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 13,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-48-scaled.jpg",
+			src: stuccoOrnament,
 			text: t("productcard-13.text"),
 			category: t("secondCollectionHeading"),
 			similars: [
@@ -377,7 +410,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 14,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-47-scaled.jpg",
+			src: emerald,
 			text: t("productcard-14.text"),
 			category: t("secondCollectionHeading"),
 			similars: [
@@ -405,7 +438,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 15,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-46-scaled.jpg",
+			src: malachiteBox,
 			text: t("productcard-15.text"),
 			category: t("secondCollectionHeading"),
 			similars: [
@@ -433,7 +466,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 16,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-45-scaled-2550x1912.jpg",
+			src: scentsSpring,
 			text: t("productcard-16.text"),
 			category: t("secondCollectionHeading"),
 			similars: [
@@ -461,7 +494,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 17,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-44-scaled.jpg",
+			src: autumnLeafFall,
 			text: t("productcard-17.text"),
 			category: t("secondCollectionHeading"),
 			similars: [
@@ -489,7 +522,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 18,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-43-scaled.jpg",
+			src: blueBreeze,
 			text: t("productcard-18.text"),
 			category: t("secondCollectionHeading"),
 			similars: [
@@ -517,7 +550,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 19,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-42-scaled.jpg",
+			src: waterBlue,
 			text: t("productcard-19.text"),
 			category: t("secondCollectionHeading"),
 			similars: [
@@ -545,7 +578,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 20,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-41-scaled.jpg",
+			src: plaid,
 			text: t("productcard-20.text"),
 			category: t("secondCollectionHeading"),
 			similars: [
@@ -573,7 +606,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 21,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-24-scaled.jpg",
+			src: vintageStyle,
 			text: t("productcard-21.text"),
 			category: t("thirdCollectionHeading"),
 			similars: [
@@ -601,7 +634,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 22,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-23-768x768.jpg",
+			src: flutteringDandelion,
 			text: t("productcard-22.text"),
 			category: t("thirdCollectionHeading"),
 			similars: [
@@ -629,7 +662,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 23,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-22-scaled.jpg",
+			src: frenchRiviera,
 			text: t("productcard-23.text"),
 			category: t("thirdCollectionHeading"),
 			similars: [
@@ -657,7 +690,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 24,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-21.jpg",
+			src: dollySheep,
 			text: t("productcard-24.text"),
 			category: t("thirdCollectionHeading"),
 			similars: [
@@ -685,7 +718,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 25,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-20-scaled.jpg",
+			src: alpineHerbs,
 			text: t("productcard-25.text"),
 			category: t("thirdCollectionHeading"),
 			similars: [
@@ -713,7 +746,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 26,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-19-scaled.jpg",
+			src: inspirational,
 			text: t("productcard-26.text"),
 			category: t("thirdCollectionHeading"),
 			similars: [
@@ -741,7 +774,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 27,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-18-scaled.jpg",
+			src: greenLotus,
 			text: t("productcard-27.text"),
 			category: t("thirdCollectionHeading"),
 			similars: [
@@ -769,7 +802,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 28,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-17-scaled.jpg",
+			src: mountainCornflower,
 			text: t("productcard-28.text"),
 			category: t("thirdCollectionHeading"),
 			similars: [
@@ -797,7 +830,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 29,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-16-scaled.jpg",
+			src: sakuraBranch,
 			text: t("productcard-29.text"),
 			category: t("thirdCollectionHeading"),
 			similars: [
@@ -825,7 +858,7 @@ export default function ProductDetails() {
 		},
 		{
 			id: 30,
-			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-15-scaled.jpg",
+			src: oliveBranch,
 			text: t("productcard-30.text"),
 			category: t("thirdCollectionHeading"),
 			similars: [
@@ -891,7 +924,7 @@ export default function ProductDetails() {
 				<InnerImageZoom
 					src={product.src}
 					zoomSrc={product.src}
-					className="rounded-[20px] md:w-[520px] md:h-[80vh] lg:w-[720px] lg:h-[96vh]"
+					className="rounded-[20px] md:w-[520px] md:h-[80vh] lg:w-[720px] lg:h-[85%]"
 					zoomType="hover"
 					hideHint={true}
 				/>

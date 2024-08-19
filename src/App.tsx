@@ -15,13 +15,18 @@ function App() {
 	const { t } = useTranslation();
 
 	return (
-		<section className="max-w-[1540px] mx-auto overflow-x-hidden select-none no-scroll">
+		//select-none
+		<section className="max-w-[1540px] mx-auto overflow-x-hidden no-scroll">
 			<GlobalContextProvider>
 				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path={t("linkAboutUrl")} element={<About />} />
-					<Route path="/shop" element={<Colletion />} />
+					<Route path="/shop" element={<Colletion />}>
+						<Route path="winter-collection" />
+						<Route path="summer-collection" />
+						<Route path="autumn-collection" />
+					</Route>
 					<Route path="/product/:text" element={<ProductDetails />} />
 					<Route path={t("linkContactUrl")} element={<Contact />} />
 				</Routes>

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import aboutUs from "../../assets/images/aboutUs.png";
 
 export default function About() {
 	const { t } = useTranslation();
@@ -17,7 +18,7 @@ export default function About() {
 
 				<img
 					className="md:w-[500px] lg:w-[700px] md:h-[75vh] rounded-[15px] shadow-2xl"
-					src="https://www.bnpfabric.uz/wp-content/uploads/2019/10/group-of-young-businesspeople-with-laptop-working-8SHTZUN.png"
+					src={aboutUs}
 					alt="Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsOur factory has been a company that produces cotton fabrics for."
 				/>
 			</div>

@@ -5,6 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { useGlobalContext } from "../../context/global-context";
 import { useTranslation } from "react-i18next";
 import HeaderLang from "./header-lang";
+import logo from "../../assets/images/logo.png";
 
 export default function Header() {
 	const [title, setTitle] = useState("Home - LLC Bukhara Natural Product");
@@ -48,10 +49,10 @@ export default function Header() {
 			{isMenuOpen && <ResponsiveMenu />}
 			<nav className="mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px] h-[12vh] flex justify-between space-x-10 items-center tracking-wide px-2 md:px-0">
 				<img
-					onClick={scrollTop}
 					alt="logo"
-					className="w-[150px] xs:w-[200px] sm:w-[190px]"
-					src="https://www.bnpfabric.uz/wp-content/uploads/2019/10/logo.2230098a.png"
+					src={logo}
+					onClick={scrollTop}
+					className="w-[150px] xs:w-[200px] sm:w-[190px] cursor-pointer"
 				/>
 				<RxHamburgerMenu
 					className="size-8 md:hidden"

@@ -1,4 +1,8 @@
 import { useTranslation } from "react-i18next";
+// Images
+import handWatch from "../../assets/images/news/handwatch.png";
+import macIphone from "../../assets/images/news/macIphone.png";
+import virtualMan from "../../assets/images/news/virtualMan.png";
 
 export default function NewsSection() {
 	const { t } = useTranslation();
@@ -6,24 +10,21 @@ export default function NewsSection() {
 	// Data
 	const newsItems = [
 		{
-			imgSrc:
-				"https://www.bnpfabric.uz/wp-content/uploads/2019/10/adult-blur-close-up-267394-637x357.png",
+			imgSrc: handWatch,
 			date: "10/05/2019",
 			author: t("newscard1.author"),
 			title: t("newscard1.title"),
 			description: t("newscard1.description"),
 		},
 		{
-			imgSrc:
-				"https://www.bnpfabric.uz/wp-content/uploads/2019/10/daniel-korpai-1074289-unsplash-637x357.png",
+			imgSrc: macIphone,
 			date: "10/05/2019",
 			author: t("newscard2.author"),
 			title: t("newscard2.title"),
 			description: t("newscard2.description"),
 		},
 		{
-			imgSrc:
-				"https://www.bnpfabric.uz/wp-content/uploads/2019/10/billetto-editorial-334686-unsplash-637x357.png",
+			imgSrc: virtualMan,
 			date: "10/05/2019",
 			author: t("newscard3.author"),
 			title: t("newscard3.title"),

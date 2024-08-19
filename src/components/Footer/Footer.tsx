@@ -4,6 +4,7 @@ import HeaderLang from "../Header/header-lang";
 import { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
+import logo from "../../assets/images/logo.png";
 
 export default function Footer() {
 	const { t } = useTranslation();
@@ -48,10 +49,10 @@ export default function Footer() {
 			>
 				<div>
 					<img
-						onClick={scrollTop}
+						src={logo}
 						alt="footer img"
-						className="w-[280px] xs:w-[320px]"
-						src="https://www.bnpfabric.uz/wp-content/uploads/2019/10/logo.2230098a.png"
+						onClick={scrollTop}
+						className="w-[280px] xs:w-[320px] cursor-pointer"
 					/>
 					<p className="w-[250px] mt-6 md:mt-4 text-black/60">
 						{t("footer-p")}

@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 export default function Colletion() {
 	const [toggle, setToggle] = useState(false);
 	const { t } = useTranslation();
+
 	const formatTextForUrl = (text: string) =>
 		text.toLowerCase().replace(/\s+/g, "-");
 
@@ -16,186 +17,186 @@ export default function Colletion() {
 	};
 
 	// Data
-	const collections = [
+	const products = [
 		{
 			id: 1,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-73-scaled.jpg",
-			text: "Squares",
-			category: "Winter Collection",
+			text: t("productcard-1.text"),
+			category: t("firstCollectionHeading"),
 		},
 		{
 			id: 2,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-72-768x768.jpg",
-			text: "Ikat",
-			category: "Winter Collection",
+			text: t("productcard-2.text"),
+			category: t("firstCollectionHeading"),
 		},
 		{
 			id: 3,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-71-scaled.jpg",
-			text: "Circles",
-			category: "Winter Collection",
+			text: t("productcard-3.text"),
+			category: t("firstCollectionHeading"),
 		},
 		{
 			id: 4,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-70-scaled.jpg",
-			text: "Geometry blue",
-			category: "Winter Collection",
+			text: t("productcard-4.text"),
+			category: t("firstCollectionHeading"),
 		},
 		{
 			id: 5,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-69-1-scaled.jpg",
-			text: "Tropical leaves",
-			category: "Winter Collection",
+			text: t("productcard-5.text"),
+			category: t("firstCollectionHeading"),
 		},
 		{
 			id: 6,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-68-scaled.jpg",
-			text: "Bembi",
-			category: "Winter Collection",
+			text: t("productcard-6.text"),
+			category: t("firstCollectionHeading"),
 		},
 		{
 			id: 7,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-67-scaled.jpg",
-			text: "Byzantium",
-			category: "Winter Collection",
+			text: t("productcard-7.text"),
+			category: t("firstCollectionHeading"),
 		},
 		{
 			id: 8,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-66-scaled.jpg",
-			text: "Evening garden",
-			category: "Winter Collection",
+			text: t("productcard-8.text"),
+			category: t("firstCollectionHeading"),
 		},
 		{
 			id: 9,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-65-scaled.jpg",
-			text: "Feather Marquis",
-			category: "Winter Collection",
+			text: t("productcard-9.text"),
+			category: t("firstCollectionHeading"),
 		},
 		{
 			id: 10,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-64-scaled.jpg",
-			text: "Lavender roses",
-			category: "Winter Collection",
+			text: t("productcard-10.text"),
+			category: t("firstCollectionHeading"),
 		},
 		{
 			id: 11,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-50-scaled.jpg",
-			text: "Safari",
-			category: "Autumn collection",
+			text: t("productcard-11.text"),
+			category: t("secondCollectionHeading"),
 		},
 		{
 			id: 12,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-49-scaled.jpg",
-			text: "Multicolored amethyst",
-			category: "Autumn collection",
+			text: t("productcard-12.text"),
+			category: t("secondCollectionHeading"),
 		},
 		{
 			id: 13,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-48-scaled.jpg",
-			text: "Stucco ornament",
-			category: "Autumn collection",
+			text: t("productcard-13.text"),
+			category: t("secondCollectionHeading"),
 		},
 		{
 			id: 14,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-47-scaled.jpg",
-			text: "Emerald (AB)",
-			category: "Autumn collection",
+			text: t("productcard-14.text"),
+			category: t("secondCollectionHeading"),
 		},
 		{
 			id: 15,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-46-scaled.jpg",
-			text: "Malachite box",
-			category: "Autumn collection",
+			text: t("productcard-15.text"),
+			category: t("secondCollectionHeading"),
 		},
 		{
 			id: 16,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-45-scaled-2550x1912.jpg",
-			text: "Scents of spring",
-			category: "Autumn collection",
+			text: t("productcard-16.text"),
+			category: t("secondCollectionHeading"),
 		},
 		{
 			id: 17,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-44-scaled.jpg",
-			text: "Autumn leaf fall (AB)",
-			category: "Autumn collection",
+			text: t("productcard-17.text"),
+			category: t("secondCollectionHeading"),
 		},
 		{
 			id: 18,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-43-scaled.jpg",
-			text: "Blue Breeze (AB)",
-			category: "Autumn collection",
+			text: t("productcard-18.text"),
+			category: t("secondCollectionHeading"),
 		},
 		{
 			id: 19,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-42-scaled.jpg",
-			text: "Water Blue (AB)",
-			category: "Autumn collection",
+			text: t("productcard-19.text"),
+			category: t("secondCollectionHeading"),
 		},
 		{
 			id: 20,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-41-scaled.jpg",
-			text: "Plaid",
-			category: "Autumn collection",
+			text: t("productcard-20.text"),
+			category: t("secondCollectionHeading"),
 		},
 		{
 			id: 21,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-24-scaled.jpg",
-			text: "Vintage style",
-			category: "Summer collection",
+			text: t("productcard-21.text"),
+			category: t("thirdCollectionHeading"),
 		},
 		{
 			id: 22,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-23-768x768.jpg",
-			text: "fluttering dandelion",
-			category: "Summer collection",
+			text: t("productcard-22.text"),
+			category: t("thirdCollectionHeading"),
 		},
 		{
 			id: 23,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-22-scaled.jpg",
-			text: "French Riviera",
-			category: "Summer collection",
+			text: t("productcard-23.text"),
+			category: t("thirdCollectionHeading"),
 		},
 		{
 			id: 24,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-21.jpg",
-			text: "Dolly the Sheep",
-			category: "Summer collection",
+			text: t("productcard-24.text"),
+			category: t("thirdCollectionHeading"),
 		},
 		{
 			id: 25,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-20-scaled.jpg",
-			text: "Alpine herbs",
-			category: "Summer collection",
+			text: t("productcard-25.text"),
+			category: t("thirdCollectionHeading"),
 		},
 		{
 			id: 26,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-19-scaled.jpg",
-			text: "Inspirational",
-			category: "Summer collection",
+			text: t("productcard-26.text"),
+			category: t("thirdCollectionHeading"),
 		},
 		{
 			id: 27,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-18-scaled.jpg",
-			text: "Green lotus",
-			category: "Summer collection",
+			text: t("productcard-27.text"),
+			category: t("thirdCollectionHeading"),
 		},
 		{
 			id: 28,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-17-scaled.jpg",
-			text: "Mountain cornflower",
-			category: "Summer collection",
+			text: t("productcard-28.text"),
+			category: t("thirdCollectionHeading"),
 		},
 		{
 			id: 29,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-16-scaled.jpg",
-			text: "Sakura branch",
-			category: "Summer collection",
+			text: t("productcard-29.text"),
+			category: t("thirdCollectionHeading"),
 		},
 		{
 			id: 30,
 			src: "https://www.bnpfabric.uz/wp-content/uploads/2024/02/diz-15-scaled.jpg",
-			text: "Olive branch",
-			category: "Summer collection",
+			text: t("productcard-30.text"),
+			category: t("thirdCollectionHeading"),
 		},
 	];
 
@@ -228,16 +229,28 @@ export default function Colletion() {
 
 						{!toggle && (
 							<div className="mx-auto md:mx-0 flex flex-col gap-y-6 md:gap-y-2 text-black/70 text-[17px] mt-6">
-								<Link to="/" className="hover:text-red-600 hover:font-medium">
+								<Link
+									to="/shop/spring-collection"
+									className="hover:text-red-600 hover:font-medium"
+								>
 									{t("spring")}
 								</Link>
-								<Link to="/" className="hover:text-red-600 hover:font-medium">
+								<Link
+									to="/shop/winter-collection"
+									className="hover:text-red-600 hover:font-medium"
+								>
 									{t("winter")}
 								</Link>
-								<Link to="/" className="hover:text-red-600 hover:font-medium">
+								<Link
+									to="/shop/summer-collection"
+									className="hover:text-red-600 hover:font-medium"
+								>
 									{t("summer")}
 								</Link>
-								<Link to="/" className="hover:text-red-600 hover:font-medium">
+								<Link
+									to="/shop/autumn-collection"
+									className="hover:text-red-600 hover:font-medium"
+								>
 									{t("autumn")}
 								</Link>
 							</div>
@@ -249,7 +262,7 @@ export default function Colletion() {
 					<div className="flex flex-col md:flex-row items-start md:items-center justify-between">
 						<div>
 							<h2 className="font-bold text-[26px] md:text-[36px] mb-3 leading-none">
-								{t("collection")}
+								{/*{t("collection")}*/}
 							</h2>
 							<span className="text-black/80">
 								{t("collection-span-showing")}
@@ -270,23 +283,26 @@ export default function Colletion() {
 					</div>
 
 					<div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-8 sm:gap-x-8 md:gap-y-12">
-						{collections.slice(0, 8).map((item, index) => (
-							<Link
-								key={index}
-								className="group"
-								onClick={scrollTop}
-								to={`/product/${formatTextForUrl(item.text)}`}
-							>
-								<img
-									alt="imgs"
-									src={item.src}
-									className="rounded-[22px] md:w-[260px] md:h-[35vh] cursor-pointer"
-								/>
-								<p className="xs:text-[19px] mt-3 text-black/90 font-medium transition-all group-hover:text-red-600 group-hover:font-bold">
-									{item.text}
-								</p>
-							</Link>
-						))}
+						{products
+							.filter((item) => item.category === t("secondCollectionHeading"))
+							.slice(0, 8)
+							.map((item, index) => (
+								<Link
+									key={index}
+									className="group"
+									onClick={scrollTop}
+									to={`/product/${formatTextForUrl(item.text)}`}
+								>
+									<img
+										alt="imgs"
+										src={item.src}
+										className="rounded-[22px] md:w-[260px] md:h-[35vh] cursor-pointer"
+									/>
+									<p className="xs:text-[19px] mt-3 text-black/90 font-medium transition-all group-hover:text-red-600 group-hover:font-bold">
+										{item.text}
+									</p>
+								</Link>
+							))}
 					</div>
 				</div>
 			</div>
