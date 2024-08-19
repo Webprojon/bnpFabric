@@ -10,6 +10,7 @@ import ProductDetails from "./pages/HomePage/Collection-Product";
 import Footer from "./components/Footer/Footer";
 import { useTranslation } from "react-i18next";
 import { Toaster } from "react-hot-toast";
+import NotFound from "./pages/NotFoundPage/NotFound";
 
 function App() {
 	const { t } = useTranslation();
@@ -29,6 +30,7 @@ function App() {
 					</Route>
 					<Route path="/product/:text" element={<ProductDetails />} />
 					<Route path={t("linkContactUrl")} element={<Contact />} />
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 				<Footer />
 				<Network />

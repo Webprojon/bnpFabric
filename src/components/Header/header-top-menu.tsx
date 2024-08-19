@@ -65,7 +65,9 @@ export default function ResponsiveMenu() {
 						))}
 					</div>
 
-					<HeaderLang />
+					<div onClick={handleMenuToggle}>
+						<HeaderLang />
+					</div>
 				</div>
 			</div>
 		</header>
