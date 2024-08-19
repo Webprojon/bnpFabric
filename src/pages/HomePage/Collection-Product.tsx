@@ -36,8 +36,15 @@ import greenLotus from "../../assets/images/summer-products/greeLotus.jpg";
 import mountainCornflower from "../../assets/images/summer-products/mountainCornflower.jpg";
 import sakuraBranch from "../../assets/images/summer-products/sakuraBranch.jpg";
 import oliveBranch from "../../assets/images/summer-products/oliveBranch.jpg";
+import { useGlobalContext } from "../../context/global-context";
+import axios from "axios";
+import Modal from "../../components/Modal";
 
 export default function ProductDetails() {
+	const { isModal, setIsModal } = useGlobalContext();
+	const [nameValue, setNameValue] = useState("");
+	const [emailValue, setEmailValue] = useState("");
+	const [textAreaValue, settextAreaValue] = useState("");
 	const [isActivePage, setIsActivePage] = useState(false);
 	const { text } = useParams();
 	const { t } = useTranslation();
@@ -910,13 +917,50 @@ export default function ProductDetails() {
 		});
 	};
 
+	// Checking actual data
 	if (!product) {
 		return (
-			<div className="font-bold text-[40px] text-center mt-20">
-				{t("notFoundProduct")} 🤷‍♂️
+			<div className="h-[72vh] flex flex-col justify-center items-center font-semibold">
+				<h2 className="text-[40px]">{t("notFoundProduct")} 🤷‍♂️</h2>
+				<Link
+					to="/"
+					className="text-[18px] bg-slate-800 hover:bg-slate-700 text-white rounded-xl py-2 px-6 mt-6"
+				>
+					Back to home
+				</Link>
 			</div>
 		);
 	}
+
+	// Form sending
+	const sendMessage = (event: React.FormEvent<HTMLFormElement>) => {
+		event.preventDefault();
+
+		const token = "6948864577:AAHTh7RO9xCZ6WFKQCle7YqvOnbfcXZIaP4";
+		const chat_id = "5850460435";
+		const url = `https://api.telegram.org/bot${token}/sendMessage`;
+		const messageContent = `Ism: ${nameValue} \nEmail:  ${emailValue} \nFikir: ${textAreaValue}`;
+
+		axios({
+			url: url,
+			method: "POST",
+			data: {
+				chat_id: chat_id,
+				text: messageContent,
+			},
+		})
+			.then(() => {
+				setTimeout(() => {
+					setIsModal(true);
+					setNameValue("");
+					setEmailValue("");
+					settextAreaValue("");
+				}, 1000);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+	};
 
 	return (
 		<section className="mx-auto px-2 lg:px-0 max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
@@ -1016,7 +1060,7 @@ export default function ProductDetails() {
 							</p>
 						</div>
 
-						<form className="flex flex-col space-y-7">
+						<form onSubmit={sendMessage} className="flex flex-col space-y-7">
 							<div className="flex flex-col sm:flex-row justify-between">
 								<div className="flex flex-col">
 									<label
@@ -1026,10 +1070,12 @@ export default function ProductDetails() {
 										{t("review-label1")} *
 									</label>
 									<input
-										type="text"
-										required
 										id="name"
+										required
+										type="text"
 										autoComplete="off"
+										value={nameValue}
+										onChange={(e) => setNameValue(e.target.value)}
 										className="bg-gray-200 rounded-[22px] md:rounded-[27px] sm:w-[310px] md:w-[470px] py-4 px-6 outline-none"
 									/>
 								</div>
@@ -1041,10 +1087,12 @@ export default function ProductDetails() {
 										{t("review-label2")} *
 									</label>
 									<input
-										type="email"
 										required
 										id="email"
+										type="email"
+										value={emailValue}
 										autoComplete="off"
+										onChange={(e) => setEmailValue(e.target.value)}
 										className="bg-gray-200 rounded-[22px] md:rounded-[27px] sm:w-[310px] md:w-[470px] py-4 px-6 outline-none"
 									/>
 								</div>
@@ -1058,9 +1106,11 @@ export default function ProductDetails() {
 									{t("review-label3")} *
 								</label>
 								<textarea
-									id="review"
 									required
+									id="review"
 									autoComplete="off"
+									value={textAreaValue}
+									onChange={(e) => settextAreaValue(e.target.value)}
 									className="bg-gray-200 resize rounded-[20px] h-[30vh] md:h-[40vh] p-6 outline-none no-scroll"
 								></textarea>
 							</div>
@@ -1108,6 +1158,8 @@ export default function ProductDetails() {
 					))}
 				</div>
 			</div>
+
+			{isModal && <Modal />}
 		</section>
 	);
 }

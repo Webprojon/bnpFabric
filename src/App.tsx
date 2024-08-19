@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/HomePage/Home";
 import Colletion from "./pages/CollectionPage/Colletion";
 import About from "./pages/AboutPage/About";
@@ -15,15 +15,38 @@ import NotFound from "./pages/NotFoundPage/NotFound";
 function App() {
 	const { t } = useTranslation();
 
+	const location = useLocation();
+	const pathname = location.pathname;
+	const homeAccess = pathname === "/";
+	const aboutAccess = pathname === t("linkAboutUrl");
+	const productAccess = pathname === "/product/:text";
+	const contactAccess = pathname === t("linkContactUrl");
+	const collectionAccess = pathname === "/shop";
+	const springAccess = pathname === "/shop/spring-collection";
+	const summerAccess = pathname === "/shop/summer-collection";
+	const autumnAccess = pathname === "/shop/autumn-collection";
+	const winterAccess = pathname === "/shop/winter-collection";
+
+	const allAccess =
+		homeAccess ||
+		aboutAccess ||
+		productAccess ||
+		contactAccess ||
+		collectionAccess ||
+		springAccess ||
+		summerAccess ||
+		autumnAccess ||
+		winterAccess;
+
 	return (
-		//select-none
 		<section className="max-w-[1540px] mx-auto overflow-x-hidden no-scroll">
 			<GlobalContextProvider>
-				<Header />
+				{allAccess && <Header />}
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path={t("linkAboutUrl")} element={<About />} />
 					<Route path="/shop" element={<Colletion />}>
+						<Route path="spring-collection" />
 						<Route path="winter-collection" />
 						<Route path="summer-collection" />
 						<Route path="autumn-collection" />
@@ -32,7 +55,7 @@ function App() {
 					<Route path={t("linkContactUrl")} element={<Contact />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
-				<Footer />
+				{allAccess && <Footer />}
 				<Network />
 				<Toaster position="top-right" />
 			</GlobalContextProvider>
