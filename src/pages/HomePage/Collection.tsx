@@ -263,12 +263,16 @@ export default function HomeCollections() {
 							<h2 className="font-bold text-[28px] xs:text-[34px] leading-none">
 								{t("collection-h2")}
 							</h2>
-							<p className="mt-4 md:w-[290px] px-3 sm:px-10 md:px-0 leading-6 xs:text-[17px] tracking-wide">
+							<p className="mt-4 mb-8 md:w-[290px] px-3 sm:px-10 md:px-0 leading-6 xs:text-[17px] tracking-wide">
 								{t("collection-p")}
 							</p>
-							<button className="hover:bg-black/90 hover:text-white transition-all mt-8 bg-white rounded-[20px] px-10 py-2 text-slate-800 font-bold">
+							<Link
+								to="/shop"
+								onClick={scrollTop}
+								className="hover:bg-black/90 hover:text-white transition-all bg-white rounded-[20px] px-10 py-[10px] text-slate-800 font-bold"
+							>
 								{t("collection-btn")}
-							</button>
+							</Link>
 						</div>
 					</div>
 

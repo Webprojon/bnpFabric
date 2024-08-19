@@ -28,15 +28,15 @@ export default function ResponsiveMenu() {
 		},
 		{
 			linkName: t("linkCollection"),
-			linkUrl: t("linkShopUrl"),
+			linkUrl: "/shop",
 		},
 		{
 			linkName: t("linkAbout"),
-			linkUrl: t("linkAboutUrl"),
+			linkUrl: "/about",
 		},
 		{
 			linkName: t("linkcontact"),
-			linkUrl: t("linkContactUrl"),
+			linkUrl: "/contact",
 		},
 	];
 

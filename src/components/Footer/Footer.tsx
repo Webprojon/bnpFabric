@@ -68,9 +68,9 @@ export default function Footer() {
 						className="flex flex-col space-y-3 lg:space-y-2"
 					>
 						<Link to="/">{t("linkHome")}</Link>
-						<Link to={t("linkShopUrl")}>{t("linkCollection")}</Link>
-						<Link to={t("linkAboutUrl")}>{t("linkAbout")}</Link>
-						<Link to={t("linkContactUrl")}>{t("linkcontact")}</Link>
+						<Link to="/shop">{t("linkCollection")}</Link>
+						<Link to="/about">{t("linkAbout")}</Link>
+						<Link to="/contact">{t("linkcontact")}</Link>
 					</div>
 				</div>
 
