@@ -1023,8 +1023,13 @@ export default function ProductDetails() {
 					</table>
 					<span className="text-[17px] text-black/70">
 						{t("category")}:{" "}
-						<Link to="/collection" className="text-red-600">
-							{product.category}
+						<Link
+							onClick={scrollTop}
+							to={`/shop/${product.category}`}
+							className="text-red-600 capitalize"
+						>
+							{product.category.replace("-", " ").split(" ").slice(0, 1)}{" "}
+							{t("collection")}
 						</Link>
 					</span>
 				</div>

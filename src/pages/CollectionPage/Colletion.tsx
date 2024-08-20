@@ -2,6 +2,8 @@ import { IoChevronForward, IoSearch } from "react-icons/io5";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { IoIosInformationCircleOutline } from "react-icons/io";
+import { MdInfoOutline } from "react-icons/md";
 
 export default function Colletion() {
 	const [toggle, setToggle] = useState(false);
@@ -206,6 +208,7 @@ export default function Colletion() {
 			category: t("thirdCollectionHeading"),
 		},
 	];
+
 	const pathname = useLocation().pathname;
 	const params = useParams().category;
 	const categories = products.filter((item) => item.category === params);
@@ -233,7 +236,7 @@ export default function Colletion() {
 						>
 							<span className="font-bold text-[22px]">{t("collection")}</span>
 							<IoChevronForward
-								className={`size-5 chevron-icon ${toggle ? "rotated" : ""}`}
+								className={`size-5 chevron-icon ${toggle && "rotated"}`}
 							/>
 						</div>
 
@@ -243,12 +246,8 @@ export default function Colletion() {
 									<Link
 										key={index}
 										to={collection.path}
-										className={`
-											${
-												pathname === collection.path
-													? "text-red-600 font-medium"
-													: ""
-											} hover:text-red-600`}
+										className={`hover:text-red-600
+											${pathname === collection.path && "text-red-600 font-medium"}`}
 									>
 										{t(collection.label)}
 									</Link>
@@ -261,28 +260,41 @@ export default function Colletion() {
 				<div className="w-full">
 					<div className="flex flex-col md:flex-row items-start md:items-center justify-between">
 						<div>
-							<h2 className="font-bold text-[26px] capitalize md:text-[32px] mb-3 leading-none">
-								{pathname === "/shop" ? "Collection" : ""}
+							<h2 className="font-bold text-[26px] capitalize md:text-[32px] leading-none mb-2">
+								{pathname === "/shop"
+									? t("collection")
+									: pathname === "/shop/spring-collection"
+									? t("spring")
+									: ""}
 							</h2>
 							{categories.slice(0, 1).map((item) => (
 								<h2 className="font-bold text-[26px] capitalize md:text-[32px] mb-3 leading-none">
-									{item.category.replace("-", " ")}
+									{item.category.replace("-", " ").split(" ").slice(0, 1)}{" "}
+									{t("collection")}
 								</h2>
 							))}
-							<span className="text-black/80">
-								{t("collection-span-showing")}
+							<span className="text-black/80 mt-3">
+								{pathname !== "/shop/spring-collection" &&
+									t("collection-span-showing")}
 							</span>
 						</div>
-						<select
-							className="mt-5 rounded-[24px] md:rounded-[27px] cursor-pointer outline-none appearance-none bg-black text-white 
-						py-3 md:py-[14px] pl-10 px-4"
-						>
-							<option value="initial-sort">{t("select-initial-sort")}</option>
-							<option value="by-popularity">{t("select-by-popularity")}</option>
-							<option value="by-rating">{t("select-by-rating")}</option>
-							<option value="by-novelty">{t("select-by-novelty")}</option>
-						</select>
+						{pathname !== "/shop/spring-collection" && (
+							<Link
+								to="/contact"
+								className="mt-5 md:mt-0 rounded-[24px] md:rounded-[27px] cursor-pointer tracking-wider bg-black text-white text-[18px] py-2 md:py-3 px-10"
+							>
+								{t("collection-order-btn")}
+							</Link>
+						)}
 					</div>
+					{pathname === "/shop/spring-collection" && (
+						<div className="flex items-center space-x-2 border border-sky-500 bg-sky-50 w-full rounded-md p-4 mt-5">
+							<div className="flex items-center justify-center text-white w-6 h-6 rounded-full bg-sky-600">
+								<MdInfoOutline className="size-5" />
+							</div>
+							<span>{t("spring-collection-message")}</span>
+						</div>
+					)}
 
 					<div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-8 sm:gap-x-8 md:gap-y-12">
 						{(pathname === "/shop" ? products : categories)

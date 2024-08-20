@@ -89,9 +89,6 @@ export default function Footer() {
 					<a href="tel:+998-93-383-75-85" target="blank">
 						+998 93 383 75 85
 					</a>
-					<a href="tel:+998-93-960-78-00" target="blank">
-						+998 93 960 78 00
-					</a>
 				</div>
 
 				<div>
