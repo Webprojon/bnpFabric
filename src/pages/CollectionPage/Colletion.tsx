@@ -2,7 +2,6 @@ import { IoChevronForward, IoSearch } from "react-icons/io5";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { IoIosInformationCircleOutline } from "react-icons/io";
 import { MdInfoOutline } from "react-icons/md";
 
 export default function Colletion() {
