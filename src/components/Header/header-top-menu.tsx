@@ -12,6 +12,12 @@ export default function ResponsiveMenu() {
 	const pathname = location.pathname;
 	const { t } = useTranslation();
 
+	const scrollTop = () => {
+		window.scrollTo({
+			top: 0,
+		});
+	};
+
 	useEffect(() => {
 		document.title = title;
 	}, [title]);
@@ -58,6 +64,7 @@ export default function ResponsiveMenu() {
 								onClick={() => {
 									setTitle(`${link.linkName} - LLC Bukhara Natural Product`);
 									handleMenuToggle();
+									scrollTop();
 								}}
 							>
 								{link.linkName}
