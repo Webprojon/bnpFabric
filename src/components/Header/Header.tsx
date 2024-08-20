@@ -10,12 +10,27 @@ import logo from "../../assets/images/logo.png";
 export default function Header() {
 	const [title, setTitle] = useState("Home - LLC Bukhara Natural Product");
 	const { isMenuOpen, setIsMenuOpen } = useGlobalContext();
+	const [isScrolled, setIsScrolled] = useState<boolean>(false);
 	const location = useLocation();
 	const pathname = location.pathname;
 	const { t } = useTranslation();
 
+	const handleScroll = () => {
+		if (window.scrollY > 10) {
+			setIsScrolled(true);
+		} else {
+			setIsScrolled(false);
+		}
+	};
+
 	useEffect(() => {
 		document.title = title;
+
+		// Scrolling
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
 	}, [title]);
 
 	const scrollTop = () => {
@@ -45,7 +60,10 @@ export default function Header() {
 	];
 
 	return (
-		<header className="bg-white z-[999]">
+		<header
+			className={`bg-white z-[999] right-0 left-0 top-0 
+				 ${isScrolled && "fixed shadow-lg transition-transform duration-300"}`}
+		>
 			{isMenuOpen && <ResponsiveMenu />}
 			<nav className="mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px] h-[12vh] flex justify-between space-x-10 items-center tracking-wide px-2 md:px-0">
 				<img

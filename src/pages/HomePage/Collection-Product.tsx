@@ -1154,7 +1154,7 @@ export default function ProductDetails() {
 							<img
 								src={similar.src}
 								alt={similar.text}
-								className="rounded-[15px] w-[320px] h-[40vh] hover:-translate-y-1 transition-all cursor-pointer"
+								className="rounded-[15px] w-[320px] h-[20vh] md:h-[40vh] hover:-translate-y-1 transition-all cursor-pointer"
 							/>
 							<p className="mt-4 xs:text-[19px] tracking-wider text-sky-600 font-bold transition-all group-hover:text-red-600 group-hover:font-bold">
 								{similar.text}

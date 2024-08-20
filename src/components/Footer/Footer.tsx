@@ -5,6 +5,7 @@ import { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import logo from "../../assets/images/logo.png";
+import { IoMdArrowRoundUp } from "react-icons/io";
 
 export default function Footer() {
 	const { t } = useTranslation();
@@ -110,7 +111,15 @@ export default function Footer() {
 						</button>
 					</form>
 
-					<HeaderLang />
+					<div className="flex items-center space-x-8">
+						<HeaderLang />
+						<div
+							onClick={scrollTop}
+							className="flex justify-center items-center cursor-pointer w-10 h-10 hover:scale-105 transition-all shadow rounded-full"
+						>
+							<IoMdArrowRoundUp className="size-6 text-slate-800" />
+						</div>
+					</div>
 				</div>
 			</div>
 

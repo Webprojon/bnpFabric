@@ -54,7 +54,7 @@ export default function HomeCollections() {
 		{
 			id: 1,
 			img: firstCollectionImg,
-			heading: t("firstCollectionHeading"),
+			heading: t("first-CollectionHeading"),
 			cards: [
 				{
 					id: 1,
@@ -111,7 +111,7 @@ export default function HomeCollections() {
 		{
 			id: 2,
 			img: secondCollectionImg,
-			heading: t("secondCollectionHeading"),
+			heading: t("second-CollectionHeading"),
 			cards: [
 				{
 					id: 11,
@@ -168,7 +168,7 @@ export default function HomeCollections() {
 		{
 			id: 3,
 			img: thirdCollectionImg,
-			heading: t("thirdCollectionHeading"),
+			heading: t("third-CollectionHeading"),
 			cards: [
 				{
 					id: 21,

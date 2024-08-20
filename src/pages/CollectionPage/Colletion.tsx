@@ -244,6 +244,7 @@ export default function Colletion() {
 								{collections.map((collection, index) => (
 									<Link
 										key={index}
+										onClick={scrollTop}
 										to={collection.path}
 										className={`hover:text-red-600
 											${pathname === collection.path && "text-red-600 font-medium"}`}
