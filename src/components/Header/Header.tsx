@@ -86,6 +86,7 @@ export default function Header() {
 									${pathname === link.linkUrl ? "text-black/90" : "text-black/55"}`}
 								onClick={() => {
 									setTitle(`${link.linkName} - LLC Bukhara Natural Product`);
+									scrollTop();
 								}}
 							>
 								{link.linkName}
