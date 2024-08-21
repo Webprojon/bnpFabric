@@ -1,42 +1,42 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 // Heading Imgages
-import firstCollectionImg from "../../assets/images/winter-imgs/111.png";
-import secondCollectionImg from "../../assets/images/autumn-imgs/111-1.png";
-import thirdCollectionImg from "../../assets/images/summer-imgs/111-2.png";
+import firstCollectionImg from "../../assets/images/winter-imgs/111-min.png";
+import secondCollectionImg from "../../assets/images/autumn-imgs/111-1-min.png";
+import thirdCollectionImg from "../../assets/images/summer-imgs/111-2-min.png";
 // Winter Images
-import squares from "../../assets/images/winter-imgs/squares.jpg";
-import ikat from "../../assets/images/winter-imgs/ikat.jpg";
-import circles from "../../assets/images/winter-imgs/circles.jpg";
-import geometryBlue from "../../assets/images/winter-imgs/geometry-blue.jpg";
-import tropicalLeaves from "../../assets/images/winter-imgs/tropical-leaves.jpg";
-import bambi from "../../assets/images/winter-imgs/bambi.jpg";
-import byzantium from "../../assets/images/winter-imgs/byzantium.jpg";
-import eveningGarden from "../../assets/images/winter-imgs/evening-garden.jpg";
-import featherMarquis from "../../assets/images/winter-imgs/feather-marquis.jpg";
-import lavenderRoses from "../../assets/images/winter-imgs/lavender-roses.jpg";
+import squares from "../../assets/images/winter-imgs/squares-min.jpg";
+import ikat from "../../assets/images/winter-imgs/ikat-min.jpg";
+import circles from "../../assets/images/winter-imgs/circles-min.jpg";
+import geometryBlue from "../../assets/images/winter-imgs/geometry-blue-min.jpg";
+import tropicalLeaves from "../../assets/images/winter-imgs/tropical-leaves-min.jpg";
+import bambi from "../../assets/images/winter-imgs/bambi-min.jpg";
+import byzantium from "../../assets/images/winter-imgs/byzantium-min.jpg";
+import eveningGarden from "../../assets/images/winter-imgs/evening-garden-min.jpg";
+import featherMarquis from "../../assets/images/winter-imgs/feather-marquis-min.jpg";
+import lavenderRoses from "../../assets/images/winter-imgs/lavender-roses-min.jpg";
 // Autumn Images
-import safari from "../../assets/images/autumn-imgs/safari.jpg";
-import multicoloredAmethyst from "../../assets/images/autumn-imgs/multicolored-amethyst.jpg";
-import stuccoOrnament from "../../assets/images/autumn-imgs/stucco-ornament.jpg";
-import emerald from "../../assets/images/autumn-imgs/emerald-(ab).jpg";
-import malachiteBox from "../../assets/images/autumn-imgs/malachite-box.jpg";
-import scentsSpring from "../../assets/images/autumn-imgs/scents-of-spring.jpg";
-import autumnLeafFall from "../../assets/images/autumn-imgs/autumn-leaf-fall.jpg";
-import blueBreeze from "../../assets/images/autumn-imgs/blue-breeze.jpg";
-import waterBlue from "../../assets/images/autumn-imgs/water-blue.jpg";
-import plaid from "../../assets/images/autumn-imgs/plaid.jpg";
+import safari from "../../assets/images/autumn-imgs/safari-min.jpg";
+import multicoloredAmethyst from "../../assets/images/autumn-imgs/multicolored-amethyst-min.jpg";
+import stuccoOrnament from "../../assets/images/autumn-imgs/stucco-ornament-min.jpg";
+import emerald from "../../assets/images/autumn-imgs/emerald-(ab)-min.jpg";
+import malachiteBox from "../../assets/images/autumn-imgs/malachite-box-min.jpg";
+import scentsSpring from "../../assets/images/autumn-imgs/scents-of-spring-min.jpg";
+import autumnLeafFall from "../../assets/images/autumn-imgs/autumn-leaf-fall-min.jpg";
+import blueBreeze from "../../assets/images/autumn-imgs/blue-breeze-min.jpg";
+import waterBlue from "../../assets/images/autumn-imgs/water-blue-min.jpg";
+import plaid from "../../assets/images/autumn-imgs/plaid-min.jpg";
 // Summer Images
-import vintageStyle from "../../assets/images/summer-imgs/vintage-style.jpg";
-import flutteringDandelion from "../../assets/images/summer-imgs/fluttering-dandelion.jpg";
-import frenchRiviera from "../../assets/images/summer-imgs/french-riviera.jpg";
-import dollySheep from "../../assets/images/summer-imgs/dolly-the-sheep.jpg";
-import alpineHerbs from "../../assets/images/summer-imgs/alpine-herbs.jpg";
-import inspirational from "../../assets/images/summer-imgs/inspirational.jpg";
-import greenLotus from "../../assets/images/summer-imgs/green-lotus.jpg";
-import mountainCornflower from "../../assets/images/summer-imgs/mountain-cornflower.jpg";
-import sakuraBranch from "../../assets/images/summer-imgs/sakura-branch.jpg";
-import oliveBranch from "../../assets/images/summer-imgs/olive-branch.jpg";
+import vintageStyle from "../../assets/images/summer-imgs/vintage-style-min.jpg";
+import flutteringDandelion from "../../assets/images/summer-imgs/fluttering-dandelion-min.jpg";
+import frenchRiviera from "../../assets/images/summer-imgs/french-riviera-min.jpg";
+import dollySheep from "../../assets/images/summer-imgs/dolly-the-sheep-min.jpg";
+import alpineHerbs from "../../assets/images/summer-imgs/alpine-herbs-min.jpg";
+import inspirational from "../../assets/images/summer-imgs/inspirational-min.jpg";
+import greenLotus from "../../assets/images/summer-imgs/green-lotus-min.jpg";
+import mountainCornflower from "../../assets/images/summer-imgs/mountain-cornflower-min.jpg";
+import sakuraBranch from "../../assets/images/summer-imgs/sakura-branch-min.jpg";
+import oliveBranch from "../../assets/images/summer-imgs/olive-branch-min.jpg";
 
 export default function HomeCollections() {
 	const { t } = useTranslation();
