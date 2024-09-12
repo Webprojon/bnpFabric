@@ -3,10 +3,15 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { MdInfoOutline } from "react-icons/md";
+import { AppDispatch, Rootstate } from "../../redux/store";
+import { useDispatch, useSelector } from "react-redux";
+import { setSearchTerm } from "../../redux/slices";
 
 export default function Colletion() {
 	const [toggle, setToggle] = useState(false);
 	const { t } = useTranslation();
+	const dispatch: AppDispatch = useDispatch();
+	const searchTerm = useSelector((state: Rootstate) => state.user.searchTerm);
 
 	const formatTextForUrl = (text: string) =>
 		text.toLowerCase().replace(/\s+/g, "-");
@@ -212,6 +217,14 @@ export default function Colletion() {
 	const params = useParams().category;
 	const categories = products.filter((item) => item.category === params);
 
+	const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+		dispatch(setSearchTerm(e.target.value));
+	};
+
+	const filteredProducts = products.filter((product) =>
+		product.text.toLowerCase().includes(searchTerm.toLowerCase()),
+	);
+
 	return (
 		<section className="xs:mt-5 px-2 lg:px-0 mx-auto max-w-[450px] xs:max-w-[600px] sm:max-w-[800px] md:max-w-[1460px]">
 			<div className="flex flex-col-reverse md:flex-row md:space-x-20">
@@ -220,12 +233,27 @@ export default function Colletion() {
 						<input
 							type="text"
 							required
+							onChange={handleChangeInput}
 							placeholder={t("collection-search")}
 							className="pl-7 pr-16 py-[.9rem] rounded-[35px] text-[17px] outline-none w-full input-bg-collection text-black/50 placeholder:text-black/50"
 						/>
 						<div className="cursor-pointer absolute right-[6px] top-1/2 -translate-y-1/2 rounded-full p-3 bg-red-500 text-white">
 							<IoSearch className="size-5" />
 						</div>
+
+						{searchTerm !== "" && (
+							<div className="w-full flex flex-col shadow-lg py-4 px-6 mt-2 z-40 rounded-lg absolute input-bg-collection text-black/70">
+								{filteredProducts.length > 0 ? (
+									filteredProducts.map((product) => (
+										<Link key={product.id} to={`/product/${product.text}`}>
+											{product.text}
+										</Link>
+									))
+								) : (
+									<span>{t("collection-no-found")}</span>
+								)}
+							</div>
+						)}
 					</form>
 
 					<div className="flex flex-col mt-12">

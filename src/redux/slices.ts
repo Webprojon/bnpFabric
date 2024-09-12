@@ -1,13 +1,15 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export interface DataType {
 	isMenuOpen: boolean;
 	isModal: boolean;
+	searchTerm: string;
 }
 
 const initialState = {
 	isMenuOpen: false,
 	isModal: false,
+	searchTerm: "",
 } as DataType;
 
 export const globalSlice = createSlice({
@@ -17,10 +19,15 @@ export const globalSlice = createSlice({
 		setMenuOpen: (state) => {
 			state.isMenuOpen = !state.isMenuOpen;
 		},
+
 		setIsModal: (state) => {
 			state.isModal = !state.isModal;
+		},
+
+		setSearchTerm: (state, action: PayloadAction<string>) => {
+			state.searchTerm = action.payload;
 		},
 	},
 });
 
-export const { setMenuOpen, setIsModal } = globalSlice.actions;
+export const { setMenuOpen, setIsModal, setSearchTerm } = globalSlice.actions;
