@@ -1,11 +1,15 @@
 import axios from "axios";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useGlobalContext } from "../../context/global-context";
 import Modal from "../../components/Modal";
+import { AppDispatch, Rootstate } from "../../redux/store";
+import { useDispatch, useSelector } from "react-redux";
+import { setIsModal } from "../../redux/slices";
 
 export default function Contact() {
-	const { isModal, setIsModal } = useGlobalContext();
+	const dispatch: AppDispatch = useDispatch();
+	const isModal = useSelector((state: Rootstate) => state.user.isModal);
+
 	const [emailValue, setEmailValue] = useState("");
 	const [phoneValue, setPhoneValue] = useState("");
 	const [textAreaValue, settextAreaValue] = useState("");
@@ -31,7 +35,7 @@ export default function Contact() {
 		})
 			.then(() => {
 				setTimeout(() => {
-					setIsModal(true);
+					dispatch(setIsModal());
 					setEmailValue("");
 					setPhoneValue("");
 					settextAreaValue("");

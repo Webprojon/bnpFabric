@@ -1,9 +1,13 @@
 import { useEffect } from "react";
-import { useGlobalContext } from "../context/global-context";
 import { useTranslation } from "react-i18next";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, Rootstate } from "../redux/store";
+import { setIsModal } from "../redux/slices";
 
 export default function Modal() {
-	const { isModal, setIsModal } = useGlobalContext();
+	const dispatch: AppDispatch = useDispatch();
+	const isModal = useSelector((state: Rootstate) => state.user.isModal);
+
 	const { t } = useTranslation();
 
 	useEffect(() => {
@@ -13,7 +17,7 @@ export default function Modal() {
 	}, [isModal]);
 
 	const handleChange = () => {
-		setIsModal(!isModal);
+		dispatch(setIsModal());
 		document.body.classList.remove("no-scroll");
 	};
 	return (

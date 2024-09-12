@@ -2,18 +2,22 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import ResponsiveMenu from "./header-top-menu";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useGlobalContext } from "../../context/global-context";
 import { useTranslation } from "react-i18next";
 import HeaderLang from "./header-lang";
 import logo from "../../assets/images/logo.png";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, Rootstate } from "../../redux/store";
+import { setMenuOpen } from "../../redux/slices";
 
 export default function Header() {
 	const [title, setTitle] = useState("Home - LLC Bukhara Natural Product");
-	const { isMenuOpen, setIsMenuOpen } = useGlobalContext();
 	const [isScrolled, setIsScrolled] = useState<boolean>(false);
 	const location = useLocation();
 	const pathname = location.pathname;
 	const { t } = useTranslation();
+
+	const dispatch: AppDispatch = useDispatch();
+	const isMenuOpen = useSelector((state: Rootstate) => state.user.isMenuOpen);
 
 	const handleScroll = () => {
 		if (window.scrollY > 10) {
@@ -74,7 +78,7 @@ export default function Header() {
 				/>
 				<RxHamburgerMenu
 					className="size-8 md:hidden"
-					onClick={() => setIsMenuOpen(!isMenuOpen)}
+					onClick={() => dispatch(setMenuOpen())}
 				/>
 				<div className="hidden md:flex justify-between w-full items-center gap-x-8">
 					<div className="space-x-10">

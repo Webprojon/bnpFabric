@@ -36,12 +36,16 @@ import greenLotus from "../../assets/images/summer-products/greeLotus-min.jpg";
 import mountainCornflower from "../../assets/images/summer-products/mountainCornflower-min.jpg";
 import sakuraBranch from "../../assets/images/summer-products/sakuraBranch-min.jpg";
 import oliveBranch from "../../assets/images/summer-products/oliveBranch-min.jpg";
-import { useGlobalContext } from "../../context/global-context";
 import axios from "axios";
 import Modal from "../../components/Modal";
+import { setIsModal } from "../../redux/slices";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, Rootstate } from "../../redux/store";
 
 export default function ProductDetails() {
-	const { isModal, setIsModal } = useGlobalContext();
+	const dispatch: AppDispatch = useDispatch();
+	const isModal = useSelector((state: Rootstate) => state.user.isModal);
+
 	const [nameValue, setNameValue] = useState("");
 	const [emailValue, setEmailValue] = useState("");
 	const [textAreaValue, settextAreaValue] = useState("");
@@ -951,7 +955,7 @@ export default function ProductDetails() {
 		})
 			.then(() => {
 				setTimeout(() => {
-					setIsModal(true);
+					dispatch(setIsModal());
 					setNameValue("");
 					setEmailValue("");
 					settextAreaValue("");

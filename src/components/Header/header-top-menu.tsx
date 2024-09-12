@@ -1,16 +1,20 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { MdClose } from "react-icons/md";
-import { useGlobalContext } from "../../context/global-context";
 import { useTranslation } from "react-i18next";
 import HeaderLang from "./header-lang";
+import { useDispatch, useSelector } from "react-redux";
+import { setMenuOpen } from "../../redux/slices";
+import { AppDispatch, Rootstate } from "../../redux/store";
 
 export default function ResponsiveMenu() {
-	const { isMenuOpen, setIsMenuOpen } = useGlobalContext();
 	const [title, setTitle] = useState("Home - LLC Bukhara Natural Product");
 	const location = useLocation();
 	const pathname = location.pathname;
 	const { t } = useTranslation();
+
+	const dispatch: AppDispatch = useDispatch();
+	const isMenuOpen = useSelector((state: Rootstate) => state.user.isMenuOpen);
 
 	const scrollTop = () => {
 		window.scrollTo({
@@ -23,7 +27,7 @@ export default function ResponsiveMenu() {
 	}, [title]);
 
 	const handleMenuToggle = () => {
-		setIsMenuOpen(!isMenuOpen);
+		dispatch(setMenuOpen());
 	};
 
 	// Data
